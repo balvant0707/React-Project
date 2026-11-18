@@ -6,10 +6,10 @@ import { createClient } from "@supabase/supabase-js";
 declare global {
   interface Window {
     __APP_CONFIG__?: {
-      SUPABASE_URL?: string;
-      SUPABASE_ANON_KEY?: string;
+      SUPABASE_URL?: "https://ydtmhkufylakqgmktcoa.supabase.co";
+      SUPABASE_ANON_KEY?: "sb_publishable_KutBesf2wzgeEtcexirkUA_KnmrczNz";
       VAPID_PUBLIC_KEY?: string;
-    };
+      
   }
 }
 
