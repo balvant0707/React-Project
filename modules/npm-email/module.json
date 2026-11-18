@@ -1,0 +1,1 @@
+{"key": "npm-email", "requires": ["companies", "products", "fleet", "offers", "messaging"]}

@@ -1,0 +1,66 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "specifications": {
+          "view": {
+            "assigned": "View specifications where I am the sales account owner",
+            "team": "View specifications of my teams",
+            "account": "View specifications of the companies I am account owner of (and their group companies)",
+            "all": "View all specifications"
+          },
+          "edit": {
+            "assigned": "Edit specifications where I am the sales account owner",
+            "team": "Edit specifications of my teams",
+            "account": "Edit specifications of the companies I am account owner of (and their group companies)",
+            "all": "Edit all specifications"
+          },
+          "create": {
+            "assigned": "Create specifications where I am the sales account owner",
+            "team": "Create specifications of my teams",
+            "all": "Create all specifications"
+          },
+          "delete": {
+            "assigned": "Delete specifications where I am the sales account owner",
+            "team": "Delete specifications of my teams",
+            "all": "Delete all specifications"
+          },
+          "approve": {
+            "assigned": "Approve specifications where I am the sales account owner",
+            "team": "Approve specifications of my teams",
+            "all": "Approve all specifications"
+          }
+        },
+        "orders": {
+          "view": {
+            "assigned": "View orders where I am the sales account owner",
+            "team": "View orders of my teams",
+            "account": "View orders of the companies I am account owner of (and their group companies)",
+            "all": "View all orders"
+          },
+          "edit": {
+            "assigned": "Edit orders where I am the sales account owner",
+            "team": "Edit orders of my teams",
+            "account": "Edit orders of the companies I am account owner of (and their group companies)",
+            "all": "Edit all orders"
+          },
+          "create": {
+            "assigned": "Create orders where I am the sales account owner",
+            "team": "Create orders of my teams",
+            "all": "Create all orders"
+          },
+          "approve": {
+            "assigned": "Approve orders where I am the sales account owner",
+            "team": "Approve orders of my teams",
+            "all": "Approve all orders"
+          }
+        }
+      }
+    },
+    "entities": {
+      "specifications": "Specifications",
+      "orders": "Orders"
+    }
+  },
+  "de": {}
+}

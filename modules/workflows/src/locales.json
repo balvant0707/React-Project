@@ -1,0 +1,18 @@
+{
+  "en": {
+    "admin": {
+      "teamUse": {
+        "tasks": "Tasks",
+        "filters": "Task filter"
+      }
+    }
+  },
+  "de": {
+    "admin": {
+      "teamUse": {
+        "tasks": "Aufgaben",
+        "filters": "Aufgabenfilter"
+      }
+    }
+  }
+}

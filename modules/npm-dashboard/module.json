@@ -1,0 +1,1 @@
+{"key": "npm-dashboard", "requires": ["companies", "products", "fleet", "offers", "tasks"]}

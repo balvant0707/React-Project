@@ -1,0 +1,48 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "vite.config.ts"
+  ],
+  "references": [
+    {
+      "path": "../../platform/packages/core"
+    },
+    {
+      "path": "../../platform/packages/ui"
+    },
+    {
+      "path": "../../modules/messaging"
+    },
+    {
+      "path": "../../modules/companies"
+    },
+    {
+      "path": "../../modules/products"
+    },
+    {
+      "path": "../../modules/fleet"
+    },
+    {
+      "path": "../../modules/offers"
+    },
+    {
+      "path": "../../modules/npm-dashboard"
+    },
+    {
+      "path": "../../modules/dock-reports"
+    },
+    {
+      "path": "../../modules/npm-email"
+    },
+    {
+      "path": "../../modules/tasks"
+    }
+  ]
+}

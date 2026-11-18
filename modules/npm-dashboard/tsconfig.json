@@ -1,0 +1,35 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ],
+  "references": [
+    {
+      "path": "../../platform/packages/core"
+    },
+    {
+      "path": "../../platform/packages/ui"
+    },
+    {
+      "path": "../companies"
+    },
+    {
+      "path": "../products"
+    },
+    {
+      "path": "../fleet"
+    },
+    {
+      "path": "../offers"
+    },
+    {
+      "path": "../tasks"
+    }
+  ]
+}

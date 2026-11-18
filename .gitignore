@@ -1,0 +1,16 @@
+node_modules
+dist
+*.local
+.env
+.env.*
+!.env.example
+apps/*/supabase/migrations
+apps/*/tsconfig.tsbuildinfo
+*.tsbuildinfo
+scripts/local
+docs/local
+apps/*/supabase/.temp
+apps/*/supabase/.branches
+apps/*/supabase/functions
+# Seeds for one machine only (COMPASS local_home.sql)
+apps/*/supabase/seed/local_*.sql

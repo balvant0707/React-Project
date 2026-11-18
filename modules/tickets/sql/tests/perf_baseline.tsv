@@ -1,0 +1,48 @@
+# user	probe	ms (best of five; written by tools/perf.sh --update)
+anna	tasks list page	57.1
+anna	tasks list open page	44.4
+anna	tasks list count	55.0
+anna	task_rights 200	103.1
+anna	tasks_to_decide	14.0
+anna	dashboard_counts	57.8
+anna	tickets list page	12.5
+anna	tickets list count	11.9
+anna	assets top level	6.0
+anna	leave mine	24.0
+anna	leave year mine	31.6
+anna	leave pending	31.8
+anna	leave dashboard	45.9
+anna	leave planner 90 days	12.3
+anna	leave violations	3.4
+hanna	tasks list page	31.0
+hanna	tasks list open page	26.5
+hanna	tasks list count	35.6
+hanna	task_rights 200	68.8
+hanna	tasks_to_decide	10.6
+hanna	dashboard_counts	42.0
+hanna	tickets list page	6.8
+hanna	tickets list count	8.8
+hanna	assets top level	7.2
+hanna	leave mine	51.0
+hanna	leave year mine	44.5
+hanna	leave pending	37.0
+hanna	leave dashboard	160.5
+hanna	leave planner 90 days	7.3
+hanna	leave violations	111.7
+tom	tasks list page	36.4
+tom	tasks list open page	32.8
+tom	tasks list count	33.2
+tom	task_rights 200	59.9
+tom	tasks_to_decide	38.1
+tom	dashboard_counts	59.1
+tom	tickets list page	8.7
+tom	tickets list count	7.9
+tom	assets top level	3.9
+tom	leave mine	29.0
+tom	leave year mine	33.2
+tom	leave pending	28.6
+tom	leave dashboard	42.8
+tom	leave planner 90 days	288.2
+tom	leave violations	3.3
+tom	write approve absence	14.0
+tom	write enter absence	14.5

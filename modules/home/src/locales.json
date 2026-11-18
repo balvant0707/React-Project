@@ -1,0 +1,136 @@
+{
+  "en": {
+    "home": {
+      "birthdayMine": "Happy birthday!",
+      "birthdaysToday": "Birthday today:",
+      "glance": {
+        "away": "Away today",
+        "blocked": "Waiting for a prerequisite",
+        "jobReview": "Job descriptions to review",
+        "leave": {
+          "taken": "taken",
+          "planned": "planned",
+          "requested": "requested"
+        },
+        "leaveMine": "My leave {{year}}",
+        "lockedAccounts": "Locked accounts",
+        "materialWaiting": "Tasks waiting for material",
+        "overdue": "Overdue tasks",
+        "stockBelow": "Below minimum stock",
+        "ticketsUnassigned": "Unassigned tickets",
+        "title": "At a glance",
+        "trainingsMine": "My trainings due",
+        "trainingsTeam": "Trainings due in the team",
+        "violations": "Team days over the absence limit"
+      },
+      "greetings": {
+        "g1": "Good to have you here.",
+        "g2": "Thank you for your effort.",
+        "g3": "Let's go, step by step.",
+        "g4": "Good to see you again.",
+        "g5": "Here we go!"
+      },
+      "links": {
+        "help": "Help",
+        "leave": "Leave",
+        "people": "Find colleagues",
+        "start": "New request",
+        "tasks": "My tasks"
+      },
+      "news": {
+        "pinned": "Pinned",
+        "title": "News"
+      },
+      "quickAccess": "Quick access",
+      "salutation": {
+        "morning": "Good morning, {{name}}!",
+        "day": "Hello {{name}}!",
+        "evening": "Good evening, {{name}}!"
+      },
+      "salutationAnonymous": {
+        "morning": "Good morning!",
+        "day": "Hello!",
+        "evening": "Good evening!"
+      },
+      "tasks": {
+        "title": "My tasks",
+        "overdue": "Overdue",
+        "open": "Coming up",
+        "pool": "In the team",
+        "nothing": "Nothing here.",
+        "allClear": "Nothing open, well done.",
+        "showAll": "Show all {{count}}",
+        "poolOverdue_one": "{{count}} of them overdue",
+        "poolOverdue_other": "{{count}} of them overdue",
+        "today": "Today"
+      }
+    }
+  },
+  "de": {
+    "home": {
+      "birthdayMine": "Alles Gute zum Geburtstag!",
+      "birthdaysToday": "Heute Geburtstag:",
+      "glance": {
+        "away": "Heute abwesend",
+        "blocked": "Warten auf Voraussetzung",
+        "jobReview": "Stellenbeschreibungen zu prüfen",
+        "leave": {
+          "taken": "genommen",
+          "planned": "geplant",
+          "requested": "beantragt"
+        },
+        "leaveMine": "Mein Urlaub {{year}}",
+        "lockedAccounts": "Gesperrte Konten",
+        "materialWaiting": "Aufgaben warten auf Material",
+        "overdue": "Überfällige Aufgaben",
+        "stockBelow": "Unter Mindestbestand",
+        "ticketsUnassigned": "Nicht zugewiesene Tickets",
+        "title": "Auf einen Blick",
+        "trainingsMine": "Meine Schulungen fällig",
+        "trainingsTeam": "Schulungen im Team fällig",
+        "violations": "Team-Tage über dem Limit"
+      },
+      "greetings": {
+        "g1": "Schön, dass du da bist.",
+        "g2": "Danke für deinen Einsatz.",
+        "g3": "Los geht's, Schritt für Schritt.",
+        "g4": "Schön, dass du wieder da bist.",
+        "g5": "Auf geht's!"
+      },
+      "links": {
+        "help": "Hilfe",
+        "leave": "Urlaub",
+        "people": "Kollegen finden",
+        "start": "Neues Anliegen",
+        "tasks": "Meine Aufgaben"
+      },
+      "news": {
+        "pinned": "Angeheftet",
+        "title": "Neuigkeiten"
+      },
+      "quickAccess": "Schnellzugriff",
+      "salutation": {
+        "morning": "Guten Morgen, {{name}}!",
+        "day": "Hallo {{name}}!",
+        "evening": "Guten Abend, {{name}}!"
+      },
+      "salutationAnonymous": {
+        "morning": "Guten Morgen!",
+        "day": "Hallo!",
+        "evening": "Guten Abend!"
+      },
+      "tasks": {
+        "title": "Meine Aufgaben",
+        "overdue": "Überfällig",
+        "open": "Demnächst",
+        "pool": "Im Team",
+        "nothing": "Hier ist nichts.",
+        "allClear": "Nichts offen, gut gemacht.",
+        "showAll": "Alle {{count}} anzeigen",
+        "poolOverdue_one": "davon {{count}} überfällig",
+        "poolOverdue_other": "davon {{count}} überfällig",
+        "today": "Heute"
+      }
+    }
+  }
+}

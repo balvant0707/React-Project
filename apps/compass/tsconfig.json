@@ -1,0 +1,54 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "vite.config.ts"
+  ],
+  "references": [
+    {
+      "path": "../../platform/packages/core"
+    },
+    {
+      "path": "../../platform/packages/ui"
+    },
+    {
+      "path": "../../modules/home"
+    },
+    {
+      "path": "../../modules/messaging"
+    },
+    {
+      "path": "../../modules/task-family"
+    },
+    {
+      "path": "../../modules/tasks"
+    },
+    {
+      "path": "../../modules/workflows"
+    },
+    {
+      "path": "../../modules/assets"
+    },
+    {
+      "path": "../../modules/tickets"
+    },
+    {
+      "path": "../../modules/items"
+    },
+    {
+      "path": "../../modules/people"
+    },
+    {
+      "path": "../../modules/leave"
+    },
+    {
+      "path": "../../modules/help"
+    }
+  ]
+}

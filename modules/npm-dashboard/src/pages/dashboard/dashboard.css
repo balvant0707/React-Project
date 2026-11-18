@@ -1,0 +1,74 @@
+/* Mosaic grid for the dashboard's widgets - see index.tsx for why this is
+   plain CSS rather than the inline `style` objects the rest of the app
+   uses: a media query is the only way to make the fixed column-span
+   layout actually collapse on narrower screens, and `style` props can't
+   express one at all. */
+
+.dashboard-mosaic {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-auto-rows: 160px;
+  gap: 16px;
+}
+
+.dashboard-mosaic--dense {
+  grid-auto-flow: dense;
+}
+
+/* Grid items default to min-width: auto, meaning a tile refuses to shrink
+   below its content's own intrinsic width even when its grid track is
+   narrower - the widgets' own flex rows (KPI stat groups, the
+   statistic+sparkline row) then just spill out of the tile instead of
+   actually shrinking to fit it. min-width: 0 opts back into "shrink to
+   the track's real width" like every other block element already does. */
+.dashboard-tile--col-1,
+.dashboard-tile--col-2,
+.dashboard-tile--col-3,
+.dashboard-tile--col-4,
+.dashboard-tile--col-8 {
+  min-width: 0;
+}
+
+.dashboard-tile--col-1 {
+  grid-column: span 1;
+}
+.dashboard-tile--col-2 {
+  grid-column: span 2;
+}
+.dashboard-tile--col-3 {
+  grid-column: span 3;
+}
+.dashboard-tile--col-4 {
+  grid-column: span 4;
+}
+.dashboard-tile--col-8 {
+  grid-column: span 8;
+}
+
+.dashboard-tile--row-1 {
+  grid-row: span 1;
+}
+.dashboard-tile--row-2 {
+  grid-row: span 2;
+}
+
+/* Below tablet width, a fixed 8-column grid squeezes every non-full-width
+   tile (a 2-column ranking chart, a 4-column time series) down to an
+   unreadably narrow sliver rather than actually reflowing - so every tile
+   just goes full-width and stacks into a single column instead. 768px
+   matches utils/useIsMobile.ts (the app's one shared "is this a small
+   screen" threshold, antd's own `md` breakpoint) - a plain CSS media query
+   can't reference that hook directly, but it needs to stay numerically in
+   sync with it by hand, since App.tsx's own mobile/desktop layout switch
+   (which this same dashboard renders inside) already flips at that point;
+   a different value here just moves where the mismatch happens rather than
+   removing it. Row height stays fixed - a stacked tile at full width is
+   still plenty readable at the same height it had before. */
+@media (max-width: 768px) {
+  .dashboard-tile--col-1,
+  .dashboard-tile--col-2,
+  .dashboard-tile--col-3,
+  .dashboard-tile--col-4 {
+    grid-column: span 8;
+  }
+}

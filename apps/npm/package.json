@@ -1,0 +1,26 @@
+{
+  "name": "@rbp/app-npm",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rbp/core": "*",
+    "@rbp/ui": "*",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "@rbp/module-messaging": "*",
+    "@rbp/module-companies": "*",
+    "@rbp/module-products": "*",
+    "@rbp/module-fleet": "*",
+    "@rbp/module-offers": "*",
+    "@rbp/module-npm-dashboard": "*",
+    "@rbp/module-dock-reports": "*",
+    "@rbp/module-npm-email": "*",
+    "@rbp/module-tasks": "*"
+  }
+}

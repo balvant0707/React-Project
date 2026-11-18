@@ -1,0 +1,216 @@
+{
+  "en": {
+    "admin": {
+      "ticketQueues": {
+        "addType": "Add type",
+        "defaultTeam": "Default team",
+        "defaultTeamHint": "New tickets in this queue go to this team unless the reporter picks someone.",
+        "hint": "A queue is a service desk (Maintenance, IT, ...). Whoever opens a ticket picks the queue. What a person may do with tickets comes from their roles (the ticket permissions are the same for every queue); the teams of a queue say where the broad permissions (all tickets, tickets on assigned assets) and changing tickets count. The public QR form always reports to Maintenance.",
+        "noTeams": "none (every holder of the permission)",
+        "openToEveryone": "Open to everyone",
+        "openToEveryoneHint": "Every signed-in user may open a ticket in this queue and follows the tickets they reported, even without a ticket permission.",
+        "teams": "Teams",
+        "teamsHint": "The teams that work this queue. Members of these teams use the permissions \"all tickets\" and \"assigned assets\" and may change tickets here. Without a team, every holder of the permission counts. Seeing, commenting on and reporting tickets follows the person's relation to the ticket (own, own team) in every queue."
+      }
+    },
+    "configuration": {
+      "ticket_queues": {
+        "description": "Service desks with their ticket types, default team and rights.",
+        "title": "Ticket queues"
+      }
+    },
+    "feed": {
+      "events": {
+        "ticket_assigned": "{{actor}} assigned the ticket (person: {{user}}, team: {{team}}).",
+        "ticket_converted_to_task": "{{actor}} created task #{{number}} from this ticket.",
+        "ticket_created": "{{actor}} created this ticket ({{type}}).",
+        "ticket_created_public": "{{name}} reported this problem through the QR form.",
+        "ticket_task_cancelled": "{{actor}} cancelled task #{{number}}. The ticket is open again."
+      }
+    },
+    "looks": {
+      "ticketQueueLooksHint": "Shown on the card under \"New request\". Empty = the ticket icon in gray."
+    },
+    "ticketTypes": {
+      "incident": "Incident",
+      "request": "Request",
+      "inspection_finding": "Inspection finding",
+      "change": "Change"
+    },
+    "tickets": {
+      "attachHint": "You can also paste screenshots into the description (Ctrl+V).",
+      "columns": {
+        "queue": "Queue",
+        "type": "Type",
+        "reporter": "Reported by",
+        "assignee": "Assignee",
+        "team": "Team",
+        "created": "Created"
+      },
+      "convert": "Create task",
+      "convertHint": "Creates a task from this ticket and starts its route.",
+      "fromPublicForm": "Reported through the public QR form.",
+      "mine": "My tickets",
+      "noAsset": "No asset",
+      "openTask": "Open task #{{number}}",
+      "queue": "Queue",
+      "waitingForYou": "The team is waiting for your answer. Reply in the comments below."
+    },
+    "notifications": {
+      "types": {
+        "ticket_created": "New ticket #{{number}} {{title}}",
+        "ticket_assigned": "Ticket #{{number}} {{title}} assigned to you"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "tickets": {
+          "view": {
+            "reported": "See tickets I reported",
+            "assigned": "See tickets assigned to me",
+            "team": "See tickets of my teams",
+            "assigned_assets": "See tickets on assets my team is responsible for (queues my teams work)",
+            "all": "See all tickets (queues my teams work)"
+          },
+          "check": {
+            "reported": "Comment on tickets I reported",
+            "assigned": "Comment on tickets assigned to me",
+            "team": "Comment on tickets of my teams",
+            "assigned_assets": "Comment on tickets on assets my team is responsible for (queues my teams work)",
+            "all": "Comment on all tickets (queues my teams work)"
+          },
+          "edit": {
+            "reported": "Edit tickets I reported",
+            "assigned": "Edit tickets assigned to me",
+            "team": "Edit tickets of my teams",
+            "assigned_assets": "Edit tickets on assets my team is responsible for (queues my teams work)",
+            "all": "Edit all tickets (queues my teams work)"
+          },
+          "create": {
+            "reported": "Report tickets",
+            "team": "Create tickets for my teams",
+            "assigned_assets": "Create tickets on assets my team is responsible for (queues my teams work)",
+            "all": "Create tickets (queues my teams work)"
+          },
+          "delete": {
+            "reported": "Delete tickets I reported",
+            "assigned": "Delete tickets assigned to me",
+            "team": "Delete tickets of my teams",
+            "assigned_assets": "Delete tickets on assets my team is responsible for (queues my teams work)",
+            "all": "Delete all tickets (queues my teams work)"
+          }
+        }
+      }
+    },
+    "entities": {
+      "tickets": "Tickets"
+    }
+  },
+  "de": {
+    "admin": {
+      "ticketQueues": {
+        "addType": "Typ hinzufügen",
+        "defaultTeam": "Standardteam",
+        "defaultTeamHint": "Neue Tickets dieser Warteschlange gehen an dieses Team, wenn die meldende Person niemanden wählt.",
+        "hint": "Eine Warteschlange ist ein Service-Desk (Instandhaltung, IT, ...). Wer ein Ticket anlegt, wählt die Warteschlange. Was jemand mit Tickets tun darf, kommt aus den Rollen (die Ticket-Rechte sind für alle Warteschlangen dieselben); die Teams einer Warteschlange bestimmen, wo die breiten Rechte (alle Tickets, Tickets an zugewiesenen Anlagen) und das Bearbeiten gelten. Das öffentliche QR-Formular meldet immer an die Instandhaltung.",
+        "noTeams": "keins (alle mit dem Recht)",
+        "openToEveryone": "Für alle offen",
+        "openToEveryoneHint": "Alle angemeldeten Personen dürfen in dieser Warteschlange ein Ticket anlegen und verfolgen ihre gemeldeten Tickets, auch ohne Ticket-Recht.",
+        "teams": "Teams",
+        "teamsHint": "Die Teams, die diese Warteschlange bearbeiten. Mitglieder dieser Teams nutzen hier die Rechte \"alle Tickets\" und \"zugewiesene Anlagen\" und dürfen Tickets ändern. Ohne Team zählen alle, die das Recht haben. Ansehen, Kommentieren und Melden richtet sich in jeder Warteschlange nach der Beziehung zum Ticket (eigene, eigenes Team)."
+      }
+    },
+    "configuration": {
+      "ticket_queues": {
+        "description": "Service-Desks mit Tickettypen, Standardteam und Rechten.",
+        "title": "Ticket-Warteschlangen"
+      }
+    },
+    "feed": {
+      "events": {
+        "ticket_assigned": "{{actor}} hat das Ticket zugewiesen (Person: {{user}}, Team: {{team}}).",
+        "ticket_converted_to_task": "{{actor}} hat aus diesem Ticket die Aufgabe #{{number}} erstellt.",
+        "ticket_created": "{{actor}} hat dieses Ticket angelegt ({{type}}).",
+        "ticket_created_public": "{{name}} hat dieses Problem über das QR-Formular gemeldet.",
+        "ticket_task_cancelled": "{{actor}} hat Aufgabe #{{number}} abgebrochen. Das Ticket ist wieder offen."
+      }
+    },
+    "looks": {
+      "ticketQueueLooksHint": "Erscheint auf der Karte unter „Neues Anliegen“. Leer = Ticket-Symbol in Grau."
+    },
+    "ticketTypes": {
+      "incident": "Störung",
+      "request": "Anfrage",
+      "inspection_finding": "Prüfmangel",
+      "change": "Änderung"
+    },
+    "tickets": {
+      "attachHint": "Screenshots lassen sich auch in die Beschreibung einfügen (Strg+V).",
+      "columns": {
+        "queue": "Warteschlange",
+        "type": "Typ",
+        "reporter": "Gemeldet von",
+        "assignee": "Zugewiesen an",
+        "team": "Team",
+        "created": "Erstellt"
+      },
+      "convert": "Aufgabe erstellen",
+      "convertHint": "Erstellt aus diesem Ticket eine Aufgabe und startet deren Ablauf.",
+      "fromPublicForm": "Über das öffentliche QR-Formular gemeldet.",
+      "mine": "Meine Tickets",
+      "noAsset": "Keine Anlage",
+      "openTask": "Aufgabe #{{number}} öffnen",
+      "queue": "Warteschlange",
+      "waitingForYou": "Das Team wartet auf Ihre Antwort. Antworten Sie unten in den Kommentaren."
+    },
+    "notifications": {
+      "types": {
+        "ticket_created": "Neues Ticket #{{number}} {{title}}",
+        "ticket_assigned": "Ticket #{{number}} {{title}} wurde dir zugewiesen"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "tickets": {
+          "view": {
+            "reported": "Von mir gemeldete Tickets ansehen",
+            "assigned": "Mir zugewiesene Tickets ansehen",
+            "team": "Tickets meiner Teams ansehen",
+            "assigned_assets": "Tickets an Anlagen, für die mein Team zuständig ist ansehen (Warteschlangen meiner Teams)",
+            "all": "Alle Tickets ansehen (Warteschlangen meiner Teams)"
+          },
+          "check": {
+            "reported": "Von mir gemeldete Tickets kommentieren",
+            "assigned": "Mir zugewiesene Tickets kommentieren",
+            "team": "Tickets meiner Teams kommentieren",
+            "assigned_assets": "Tickets an Anlagen, für die mein Team zuständig ist kommentieren (Warteschlangen meiner Teams)",
+            "all": "Alle Tickets kommentieren (Warteschlangen meiner Teams)"
+          },
+          "edit": {
+            "reported": "Von mir gemeldete Tickets ändern",
+            "assigned": "Mir zugewiesene Tickets ändern",
+            "team": "Tickets meiner Teams ändern",
+            "assigned_assets": "Tickets an Anlagen, für die mein Team zuständig ist ändern (Warteschlangen meiner Teams)",
+            "all": "Alle Tickets ändern (Warteschlangen meiner Teams)"
+          },
+          "create": {
+            "reported": "Tickets melden",
+            "team": "Tickets für meine Teams anlegen",
+            "assigned_assets": "Tickets an Anlagen, für die mein Team zuständig ist anlegen (Warteschlangen meiner Teams)",
+            "all": "Tickets anlegen (Warteschlangen meiner Teams)"
+          },
+          "delete": {
+            "reported": "Von mir gemeldete Tickets löschen",
+            "assigned": "Mir zugewiesene Tickets löschen",
+            "team": "Tickets meiner Teams löschen",
+            "assigned_assets": "Tickets an Anlagen, für die mein Team zuständig ist löschen (Warteschlangen meiner Teams)",
+            "all": "Alle Tickets löschen (Warteschlangen meiner Teams)"
+          }
+        }
+      }
+    },
+    "entities": {
+      "tickets": "Tickets"
+    }
+  }
+}

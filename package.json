@@ -1,0 +1,38 @@
+{
+  "name": "react-business-platform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "platform/packages/*",
+    "modules/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:compass": "npm run dev -w @rbp/app-compass",
+    "dev:npm": "npm run dev -w @rbp/app-npm",
+    "build": "npm run check && npm run build -w @rbp/app-compass && npm run build -w @rbp/app-npm",
+    "build:pages:compass": "npm run check && npm run build -w @rbp/app-compass && node tools/pages/write-pages-config.mjs compass && node tools/pages/check-pages-output.mjs compass",
+    "build:pages:npm": "npm run check && npm run build -w @rbp/app-npm && node tools/pages/write-pages-config.mjs npm && node tools/pages/check-pages-output.mjs npm",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "check": "node scripts/check-refine-imports.mjs && node scripts/check-list-tables.mjs && node scripts/check-branding.mjs && node tools/compose.mjs --check",
+    "compose": "node tools/compose.mjs",
+    "test:sql": "node tools/sql-test-all.mjs",
+    "test:core": "node --experimental-strip-types platform/packages/core/src/registry.test.mjs && node --experimental-strip-types platform/packages/core/src/login/loginEmail.test.mjs && node --experimental-strip-types platform/packages/core/src/gate/startSequence.test.mjs",
+    "test:functions": "node --test modules/npm-email/tests/*.test.*",
+    "test:pdf": "node tools/pdf-smoke.mjs",
+    "test:gate": "node --experimental-strip-types --no-warnings tools/browser/gate-test.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^8.2.2"
+  }
+}

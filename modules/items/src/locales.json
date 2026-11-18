@@ -1,0 +1,310 @@
+{
+  "en": {
+    "feed": {
+      "events": {
+        "items_arrived": "The items of order #{{number}} {{title}} have arrived.",
+        "items_order_cancelled": "Order #{{number}} {{title}} was cancelled; its items are missing again.",
+        "items_ordered": "{{actor}} ordered {{count}} item(s) with #{{number}} {{title}}."
+      }
+    },
+    "statistics": {
+      "allSuppliers": "All suppliers",
+      "area": "Area (asset and below)",
+      "byAsset": "By asset",
+      "byMonth": "By month",
+      "bySupplier": "By supplier",
+      "corrective": "Corrective (from ticket)",
+      "downtimeHours": "Downtime (h)",
+      "empty": "No maintenance activity in this period.",
+      "export": "Export CSV",
+      "externalCost": "External cost (net)",
+      "hint": "Hours and downtime count tasks completed or started in the period; corrective means the task came from a ticket.",
+      "items": "Items",
+      "month": "Month",
+      "noSupplier": "(no supplier)",
+      "partsCost": "Material from stock",
+      "partsCostHint": "Used catalogue items that were not ordered for the task, at the current unit price. Ordered items count through their invoice under external costs.",
+      "summaryTitle": "Maintenance, last 12 months",
+      "tasksDone": "Tasks done",
+      "title": "Maintenance statistics",
+      "workHours": "Work hours"
+    },
+    "stock": {
+      "addBelow": "Below",
+      "addLocation": "Add location",
+      "automatic": "Automatic",
+      "below": "Below",
+      "belowMinimum": "Below minimum",
+      "book": "Book",
+      "bookTitle": "Book stock",
+      "booked": "Booked",
+      "bookedQuantity": "Booked: {{count}}",
+      "by": "By",
+      "change": "Change",
+      "code": "Code",
+      "codeAuto": "Assigned automatically",
+      "codeHint": "Printed on the label. Letters, digits and . _ - only.",
+      "codeInvalid": "Letters, digits and . _ - only (up to 40).",
+      "codeTaken": "This code is already used.",
+      "correctionHint": "Positive adds, negative removes.",
+      "count": "Count",
+      "countDifference": "Count saved, difference {{count}}.",
+      "countNoDifference": "Count saved, no difference.",
+      "countSave": "Save count",
+      "countTitle": "Count stock",
+      "counted": "Counted quantity",
+      "defaultLocation": "Default location",
+      "defaultLocationHint": "Goods in and automatic issues use this location without asking.",
+      "deleteConfirm": "Delete this location?",
+      "development": "Stock development",
+      "done": "Done",
+      "editLocation": "Edit location",
+      "emptyLocation": "Nothing in stock here.",
+      "errors": {
+        "hasStock": "Stock keeping cannot be switched off while the item has stock.",
+        "inactive": "This location is not active.",
+        "notAllowed": "You may not book stock at this location.",
+        "notEnough": "Not enough stock at the source location.",
+        "notFound": "This stock location does not exist (any more).",
+        "notManaged": "This item is not kept in stock. Switch it on in the item first.",
+        "picks": "The picked quantities must add up to the quantity used.",
+        "quantity": "Please enter a quantity above zero (a correction may be negative).",
+        "sameLocation": "Source and target are the same location.",
+        "tree": "A location cannot sit below itself and may be at most 6 levels deep."
+      },
+      "history": "Bookings",
+      "inUse": "This location has bookings or sub-locations and cannot be deleted. Mark it inactive instead.",
+      "inactiveHint": "An inactive location takes no new goods.",
+      "kindHint": {
+        "opening": "Records the stock that is there when you start. Book each location once.",
+        "receipt": "Goods that arrived without a purchase request. Orders completed in the app are booked automatically.",
+        "correction": "Fixes a booking error or records loss or damage. Prefer a count when you can count."
+      },
+      "kindLabel": "Booking",
+      "kinds": {
+        "opening": "First stock",
+        "receipt": "Goods in",
+        "issue": "Issue",
+        "return": "Return",
+        "correction": "Correction",
+        "count": "Count",
+        "transfer": "Move"
+      },
+      "labels": "QR labels",
+      "labelsHint": "Stick the label on the shelf or bin. Scanning it with the phone camera opens the location.",
+      "listEmpty": "No item is kept in stock yet. Switch it on in the item (\"Keep in stock\").",
+      "loadMore": "Load older bookings",
+      "location": "Location",
+      "locations": "Locations",
+      "managed": "Keep in stock",
+      "managedHint": "Only for relevant, larger spare parts. Small parts and consumables are reordered by kanban and stay out of the stock.",
+      "minimum": "Minimum stock",
+      "minimumHint": "Reported when the total over all locations falls below this quantity. Leave empty for no report.",
+      "months": "{{count}} months",
+      "newLocation": "New location",
+      "noLocations": "No locations yet.",
+      "noLocationsYet": "There is no stock location yet. Create one first on the tab Locations (it needs the right to keep the locations), then choose it here.",
+      "noMovements": "No bookings yet.",
+      "noStock": "No stock booked.",
+      "notEnoughAvailable": "Only {{count}} in stock.",
+      "notManaged": "This item is not kept in stock.",
+      "note": "Note",
+      "onlyBelow": "Only below minimum",
+      "parent": "Inside",
+      "parentHint": "Store, shelf, bin: choose where this location sits. Empty = top level.",
+      "picksOff": "The parts add up to {{sum}}, but {{quantity}} were used.",
+      "printLabel": "Print label",
+      "reorderQuantity": "Reorder quantity",
+      "searchPlaceholder": "Item number or name",
+      "takenFrom": "From:",
+      "team": "Responsible team",
+      "teamHint": "The team counts, corrects and moves stock here and gets the minimum stock report.",
+      "title": "Stock",
+      "total": "In stock",
+      "transfer": "Move",
+      "transferFrom": "From {{location}} (in stock: {{count}})",
+      "transferTitle": "Move stock",
+      "transferTo": "To location",
+      "trend": "Last {{weeks}} weeks"
+    },
+    "notifications": {
+      "types": {
+        "items_arrived": "Items for #{{number}} {{title}} have arrived",
+        "items_order_due": "Order items for #{{number}} {{title}} now (by {{date}})",
+        "stock_below_minimum": "Stock below minimum: {{name}} ({{quantity}} of {{minimum}})"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "items": {
+          "view": "See the item catalogue and spare parts lists",
+          "edit": "Keep the catalogue, spare parts lists and suppliers"
+        },
+        "stock": {
+          "view": "See the stock and the stock locations",
+          "edit": {
+            "team": "Count, correct and move stock at the locations of my teams",
+            "all": "Count, correct and move stock everywhere, and keep the stock locations"
+          }
+        }
+      }
+    },
+    "entities": {
+      "items": "Items"
+    }
+  },
+  "de": {
+    "feed": {
+      "events": {
+        "items_arrived": "Die Artikel der Bestellung #{{number}} {{title}} sind eingetroffen.",
+        "items_order_cancelled": "Die Bestellung #{{number}} {{title}} wurde abgebrochen; ihre Artikel fehlen wieder.",
+        "items_ordered": "{{actor}} hat {{count}} Artikel mit #{{number}} {{title}} bestellt."
+      }
+    },
+    "statistics": {
+      "allSuppliers": "Alle Lieferanten",
+      "area": "Bereich (Anlage und darunter)",
+      "byAsset": "Je Anlage",
+      "byMonth": "Je Monat",
+      "bySupplier": "Je Lieferant",
+      "corrective": "Störungsbehebung (aus Ticket)",
+      "downtimeHours": "Stillstand (h)",
+      "empty": "Keine Instandhaltungstätigkeit in diesem Zeitraum.",
+      "export": "CSV exportieren",
+      "externalCost": "Fremdkosten (netto)",
+      "hint": "Stunden und Stillstand zählen Aufgaben, die im Zeitraum abgeschlossen bzw. begonnen wurden; Störungsbehebung heißt: die Aufgabe stammt aus einem Ticket.",
+      "items": "Positionen",
+      "month": "Monat",
+      "noSupplier": "(ohne Lieferant)",
+      "partsCost": "Material aus dem Lager",
+      "partsCostHint": "Verbrauchte Katalogartikel, die nicht für die Aufgabe bestellt wurden, zum aktuellen Stückpreis. Bestelltes zählt über die Rechnung bei den externen Kosten.",
+      "summaryTitle": "Instandhaltung, letzte 12 Monate",
+      "tasksDone": "Erledigte Aufgaben",
+      "title": "Instandhaltungs-Auswertung",
+      "workHours": "Arbeitsstunden"
+    },
+    "stock": {
+      "addBelow": "Darunter",
+      "addLocation": "Lagerort hinzufügen",
+      "automatic": "Automatisch",
+      "below": "Darunter",
+      "belowMinimum": "Unter Mindestbestand",
+      "book": "Buchen",
+      "bookTitle": "Bestand buchen",
+      "booked": "Gebucht",
+      "bookedQuantity": "Gebucht: {{count}}",
+      "by": "Von",
+      "change": "Ändern",
+      "code": "Code",
+      "codeAuto": "Wird automatisch vergeben",
+      "codeHint": "Steht auf dem Etikett. Nur Buchstaben, Ziffern und . _ -",
+      "codeInvalid": "Nur Buchstaben, Ziffern und . _ - (bis 40 Zeichen).",
+      "codeTaken": "Dieser Code ist schon vergeben.",
+      "correctionHint": "Positiv erhöht, negativ verringert.",
+      "count": "Zählen",
+      "countDifference": "Zählung gespeichert, Abweichung {{count}}.",
+      "countNoDifference": "Zählung gespeichert, keine Abweichung.",
+      "countSave": "Zählung speichern",
+      "countTitle": "Bestand zählen",
+      "counted": "Gezählte Menge",
+      "defaultLocation": "Standardlagerort",
+      "defaultLocationHint": "Wareneingang und automatische Entnahmen nutzen diesen Lagerort ohne Rückfrage.",
+      "deleteConfirm": "Diesen Lagerort löschen?",
+      "development": "Bestandsentwicklung",
+      "done": "Fertig",
+      "editLocation": "Lagerort bearbeiten",
+      "emptyLocation": "Hier liegt nichts.",
+      "errors": {
+        "hasStock": "Die Bestandsführung lässt sich nicht abschalten, solange der Artikel Bestand hat.",
+        "inactive": "Dieser Lagerort ist nicht aktiv.",
+        "notAllowed": "Du darfst an diesem Lagerort nicht buchen.",
+        "notEnough": "Am Quell-Lagerort ist nicht genug Bestand.",
+        "notFound": "Dieser Lagerort existiert nicht (mehr).",
+        "notManaged": "Dieser Artikel wird nicht auf Lager geführt. Schalte es zuerst im Artikel ein.",
+        "picks": "Die gewählten Mengen müssen zusammen der verbrauchten Menge entsprechen.",
+        "quantity": "Bitte eine Menge größer als null eingeben (eine Korrektur darf negativ sein).",
+        "sameLocation": "Quelle und Ziel sind derselbe Lagerort.",
+        "tree": "Ein Lagerort kann nicht unter sich selbst liegen und darf höchstens 6 Ebenen tief sein."
+      },
+      "history": "Buchungen",
+      "inUse": "Dieser Lagerort hat Buchungen oder Unterlagerorte und kann nicht gelöscht werden. Setze ihn stattdessen auf inaktiv.",
+      "inactiveHint": "Ein inaktiver Lagerort nimmt keine neue Ware auf.",
+      "kindHint": {
+        "opening": "Erfasst den Bestand, der beim Start da ist. Jeden Lagerort einmal buchen.",
+        "receipt": "Ware, die ohne Beschaffungsanfrage angekommen ist. Im Programm abgeschlossene Bestellungen werden automatisch gebucht.",
+        "correction": "Behebt einen Buchungsfehler oder erfasst Verlust oder Schaden. Zählen ist besser, wenn du zählen kannst."
+      },
+      "kindLabel": "Buchung",
+      "kinds": {
+        "opening": "Anfangsbestand",
+        "receipt": "Zugang",
+        "issue": "Entnahme",
+        "return": "Rückgabe",
+        "correction": "Korrektur",
+        "count": "Zählung",
+        "transfer": "Umlagerung"
+      },
+      "labels": "QR-Etiketten",
+      "labelsHint": "Klebe das Etikett an Regal oder Fach. Scannen mit der Handykamera öffnet den Lagerort.",
+      "listEmpty": "Noch kein Artikel wird auf Lager geführt. Schalte es im Artikel ein („Auf Lager führen“).",
+      "loadMore": "Ältere Buchungen laden",
+      "location": "Lagerort",
+      "locations": "Lagerorte",
+      "managed": "Auf Lager führen",
+      "managedHint": "Nur für relevante, größere Ersatzteile. Kleinteile und Verbrauchsmaterial werden per Kanban nachbestellt und bleiben außerhalb des Bestands.",
+      "minimum": "Mindestbestand",
+      "minimumHint": "Wird gemeldet, wenn die Summe über alle Lagerorte darunter fällt. Leer lassen für keine Meldung.",
+      "months": "{{count}} Monate",
+      "newLocation": "Neuer Lagerort",
+      "noLocations": "Noch keine Lagerorte.",
+      "noLocationsYet": "Es gibt noch keinen Lagerort. Lege zuerst unter Lagerorte einen an (dafür braucht es das Recht, die Lagerorte zu pflegen) und wähle ihn dann hier.",
+      "noMovements": "Noch keine Buchungen.",
+      "noStock": "Kein Bestand gebucht.",
+      "notEnoughAvailable": "Nur {{count}} auf Lager.",
+      "notManaged": "Dieser Artikel wird nicht auf Lager geführt.",
+      "note": "Notiz",
+      "onlyBelow": "Nur unter Mindestbestand",
+      "parent": "Innerhalb von",
+      "parentHint": "Lager, Regal, Fach: wähle, wo dieser Lagerort liegt. Leer = oberste Ebene.",
+      "picksOff": "Die Teile ergeben {{sum}}, verbraucht wurden aber {{quantity}}.",
+      "printLabel": "Etikett drucken",
+      "reorderQuantity": "Bestellmenge",
+      "searchPlaceholder": "Artikelnummer oder Name",
+      "takenFrom": "Aus:",
+      "team": "Verantwortliches Team",
+      "teamHint": "Das Team zählt, korrigiert und lagert hier um und bekommt die Meldung bei Unterschreitung des Mindestbestands.",
+      "title": "Bestand",
+      "total": "Auf Lager",
+      "transfer": "Umlagern",
+      "transferFrom": "Von {{location}} (Bestand: {{count}})",
+      "transferTitle": "Bestand umlagern",
+      "transferTo": "Nach Lagerort",
+      "trend": "Letzte {{weeks}} Wochen"
+    },
+    "notifications": {
+      "types": {
+        "items_arrived": "Artikel für #{{number}} {{title}} sind da",
+        "items_order_due": "Artikel für #{{number}} {{title}} jetzt bestellen (bis {{date}})",
+        "stock_below_minimum": "Bestand unter Minimum: {{name}} ({{quantity}} von {{minimum}})"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "items": {
+          "view": "Artikelkatalog und Ersatzteillisten sehen",
+          "edit": "Katalog, Ersatzteillisten und Lieferanten pflegen"
+        },
+        "stock": {
+          "view": "Bestand und Lagerorte sehen",
+          "edit": {
+            "team": "Bestand an den Lagerorten meiner Teams zählen, korrigieren und umlagern",
+            "all": "Bestand überall zählen, korrigieren und umlagern, Lagerorte pflegen"
+          }
+        }
+      }
+    },
+    "entities": {
+      "items": "Artikel"
+    }
+  }
+}

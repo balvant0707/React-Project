@@ -1,0 +1,346 @@
+{
+  "en": {
+    "admin": {
+      "absenceTypes": {
+        "countsAsLeave": "Counts as leave",
+        "countsAsLeaveHint": "Counted in the leave days per year.",
+        "hint": "Each absence type names its route: a task type with the special function \"Absence\". Approval, booking in the time recording system and anything else are steps of that route. A route without a decision step makes the absence count at once.",
+        "inactive": "inactive",
+        "newRoute": "New route",
+        "route": "Route",
+        "routeHint": "Task types with the special function \"Absence\"."
+      },
+      "teamUse": {
+        "leave": "Absence planner"
+      }
+    },
+    "appSettings": {
+      "leave": "Absence rule",
+      "leaveMaxAbsentPct": "Share of a team that may be away at once",
+      "leaveMaxAbsentPctHint": "A day with more people away than this share (rounded down) is marked in the planner and flagged on the request. It never blocks.",
+      "leaveMinAllowedAbsent": "Always allowed to be away",
+      "leaveMinAllowedAbsentHint": "Small teams: at least this many people may be away at the same time whatever the share says. Teams of one person are not checked."
+    },
+    "configuration": {
+      "absence_types": {
+        "description": "Vacation, special leave, ...: route, look, counts as leave.",
+        "title": "Absence types"
+      },
+      "holidays": {
+        "description": "Import and manage holidays, federal state per site.",
+        "title": "Public holidays"
+      }
+    },
+    "feed": {
+      "events": {
+        "leave_adjusted": "{{actor}} changed the leave: {{from}} – {{to}} ({{days}} days).",
+        "leave_withdrawn": "{{actor}} withdrew the approved leave."
+      }
+    },
+    "holidays": {
+      "add": "Add holiday",
+      "date": "Date",
+      "deleteConfirm": "Delete this holiday?",
+      "everywhere": "Everywhere",
+      "import": "Import holidays",
+      "importFailed": "Import failed: {{error}}",
+      "importHint": "Fetches the holidays of the chosen years for Germany and replaces earlier imported entries of these years. Entries you typed in yourself are kept.",
+      "importSource": "Source: Nager.Date (date.nager.at), an open-source service. Only public holiday data is fetched, from the server, when you press the button.",
+      "importTitle": "Import",
+      "imported": "{{count}} holidays imported.",
+      "noRegion": "No state",
+      "noSites": "No site is entered on any person yet.",
+      "partialHint": "A holiday that only part of a state keeps (for example Assumption Day in Bavaria) is imported for the whole state. Delete it here if it does not apply to your site.",
+      "regionsHint": "Regional holidays are imported for the sites whose federal state you set here. Sites without a state only get the nationwide holidays.",
+      "regionsTitle": "Federal state of each site",
+      "scope": "Applies to",
+      "sitesWithoutRegion": "No federal state set for: {{sites}}. They only got the nationwide holidays.",
+      "source": "Source",
+      "sources": {
+        "import": "Imported",
+        "manual": "Entered"
+      },
+      "subtitle": "Public holidays do not count as leave days. They are imported from Nager.Date or entered by hand."
+    },
+    "leave": {
+      "adjust": "Change period",
+      "adjustComment": "Reason for the change (shown in the feed)",
+      "adjusted": "Leave changed.",
+      "approvalsHint": "Requests that wait for your decision. Open one to approve or reject it; you can change the period there first.",
+      "approvalsNone": "Nothing to decide.",
+      "comment": "Note for your supervisor",
+      "days": "Working days",
+      "decide": "Decide",
+      "endHalf": "The leave ends at midday of the last day",
+      "enter": "Enter",
+      "enterFor": "Enter leave for {{name}}",
+      "enterForHint": "You are entering this leave for {{name}}. It is approved at once and {{name}} sees it in the planner.",
+      "entered": "Leave entered and approved",
+      "enteredBy": "Entered by",
+      "fromMidday": "from midday",
+      "holidaysMissing": "No public holidays are stored after {{date}}: working days are counted without holidays. Ask an admin to add them.",
+      "inYear": "Approved in {{year}} (working days)",
+      "kind": "Kind",
+      "noEntitlement": "Only the days taken are shown. Entitlement and remaining days are kept in time recording.",
+      "openRequest": "Open request",
+      "period": "Period",
+      "person": "Person",
+      "planner": {
+        "day": "Day",
+        "empty": "Nobody to show. Choose another team.",
+        "limit": "The planner shows about three years. Pick a later start date to continue.",
+        "loadTip": "{{team}}: {{away}} of {{size}} away, allowed {{allowed}}",
+        "me": "Only me",
+        "person": "Person",
+        "pickHint": "To enter leave, click the first day in your row (as a supervisor also in the rows of your people), then the last day (week view: the weeks). Click a coloured field to see the leave.",
+        "picking": "Now click the last day: {{from}} – {{to}}",
+        "reports": "My team members",
+        "teamLoad": "Team away (peak)",
+        "today": "Today",
+        "week": "Week",
+        "weekShort": "W{{week}}",
+        "worstTeamLoad": "Worst team (peak)"
+      },
+      "plusRequested": "+ {{days}} requested",
+      "request": "Request leave",
+      "requested": "Request sent to your supervisor.",
+      "rule": {
+        "awayPeople": "Away",
+        "detail": "up to {{away}} of {{size}} away, allowed {{allowed}}",
+        "hint": "You can still approve. The next higher supervisor is told and finds the days under Rule violations, as long as they exist.",
+        "hintOwn": "You can still send the request. Your supervisor decides.",
+        "listHint": "Days in the next six months on which more people of a team are away than the absence rule allows. Computed live from the current leave, so it follows every new request, change and withdrawal. You see the teams of people who are at least two levels below you.",
+        "load": "Peak",
+        "loadValue": "{{away}} of {{size}} away, allowed {{allowed}}",
+        "none": "No rule violations in the next six months.",
+        "team": "Team",
+        "title": "Many people of the team are away in this period",
+        "titleApproved": "On some days of this leave too many people of the team are away",
+        "titleOwn": "Many people of your team would be away in this period"
+      },
+      "send": "Send request",
+      "startHalf": "The leave starts at midday of the first day",
+      "status": "Status",
+      "statuses": {
+        "requested": "Waiting for approval",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "cancelled": "Withdrawn"
+      },
+      "tabs": {
+        "approvals": "To decide",
+        "mine": "My leave",
+        "planner": "Planner",
+        "violations": "Rule violations"
+      },
+      "taskTitle": "{{type}} {{from}} – {{to}}",
+      "title": "Leave",
+      "untilMidday": "until midday",
+      "withdraw": "Withdraw",
+      "withdrawConfirm": "Withdraw this leave?",
+      "withdrawn": "Leave withdrawn."
+    },
+    "notifications": {
+      "types": {
+        "leave_withdrawn": "Leave #{{number}} {{title}} was withdrawn",
+        "leave_adjusted": "Leave #{{number}} {{title}} was changed",
+        "leave_rule_violation": "Leave #{{number}} {{title}} was approved over the absence limit ({{days}} days)"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "leave": {
+          "view": {
+            "created": "See my own leave requests",
+            "all": "See everybody's leave requests"
+          },
+          "check": {
+            "created": "Comment on my own leave requests",
+            "all": "Comment on everybody's leave requests"
+          },
+          "create": {
+            "created": "Apply for leave"
+          },
+          "edit": {
+            "all": "Withdraw and correct everybody's leave requests"
+          }
+        }
+      }
+    },
+    "entities": {
+      "leave": "Leave"
+    }
+  },
+  "de": {
+    "admin": {
+      "absenceTypes": {
+        "countsAsLeave": "Zählt als Urlaub",
+        "countsAsLeaveHint": "Wird bei den Urlaubstagen pro Jahr mitgezählt.",
+        "hint": "Jede Abwesenheitsart nennt ihre Route: einen Aufgabentyp mit der Sonderfunktion „Abwesenheit“. Genehmigung, Buchen in der Zeiterfassung und alles Weitere sind Schritte dieser Route. Eine Route ohne Entscheidungsschritt lässt die Abwesenheit sofort gelten.",
+        "inactive": "inaktiv",
+        "newRoute": "Neue Route",
+        "route": "Route",
+        "routeHint": "Aufgabentypen mit der Sonderfunktion „Abwesenheit“."
+      },
+      "teamUse": {
+        "leave": "Urlaubsplaner"
+      }
+    },
+    "appSettings": {
+      "leave": "Abwesenheitsregel",
+      "leaveMaxAbsentPct": "Anteil eines Teams, der gleichzeitig weg sein darf",
+      "leaveMaxAbsentPctHint": "Ein Tag mit mehr Abwesenden als dieser Anteil (abgerundet) wird im Planer markiert und am Antrag vermerkt. Es wird nie blockiert.",
+      "leaveMinAllowedAbsent": "Immer erlaubt abwesend",
+      "leaveMinAllowedAbsentHint": "Kleine Teams: mindestens so viele Personen dürfen gleichzeitig weg sein, egal was der Anteil sagt. Teams mit einer Person werden nicht geprüft."
+    },
+    "configuration": {
+      "absence_types": {
+        "description": "Urlaub, Sonderurlaub, ...: Route, Aussehen, zählt als Urlaub.",
+        "title": "Abwesenheitsarten"
+      },
+      "holidays": {
+        "description": "Feiertage importieren und pflegen, Bundesland je Standort.",
+        "title": "Feiertage"
+      }
+    },
+    "feed": {
+      "events": {
+        "leave_adjusted": "{{actor}} hat den Urlaub geändert: {{from}} – {{to}} ({{days}} Tage).",
+        "leave_withdrawn": "{{actor}} hat den genehmigten Urlaub zurückgezogen."
+      }
+    },
+    "holidays": {
+      "add": "Feiertag hinzufügen",
+      "date": "Datum",
+      "deleteConfirm": "Diesen Feiertag löschen?",
+      "everywhere": "Überall",
+      "import": "Feiertage importieren",
+      "importFailed": "Import fehlgeschlagen: {{error}}",
+      "importHint": "Holt die Feiertage der gewählten Jahre für Deutschland und ersetzt früher importierte Einträge dieser Jahre. Selbst eingetragene Einträge bleiben erhalten.",
+      "importSource": "Quelle: Nager.Date (date.nager.at), ein Open-Source-Dienst. Es werden nur öffentliche Feiertagsdaten geholt, vom Server aus, wenn du den Knopf drückst.",
+      "importTitle": "Import",
+      "imported": "{{count}} Feiertage importiert.",
+      "noRegion": "Kein Bundesland",
+      "noSites": "Bei keiner Person ist ein Standort eingetragen.",
+      "partialHint": "Ein Feiertag, den nur ein Teil eines Bundeslandes begeht (z. B. Mariä Himmelfahrt in Bayern), wird für das ganze Bundesland importiert. Lösche ihn hier, wenn er für deinen Standort nicht gilt.",
+      "regionsHint": "Regionale Feiertage werden für die Standorte importiert, deren Bundesland du hier einstellst. Standorte ohne Bundesland bekommen nur die bundesweiten Feiertage.",
+      "regionsTitle": "Bundesland je Standort",
+      "scope": "Gilt für",
+      "sitesWithoutRegion": "Kein Bundesland eingetragen für: {{sites}}. Sie haben nur die bundesweiten Feiertage bekommen.",
+      "source": "Quelle",
+      "sources": {
+        "import": "Importiert",
+        "manual": "Eingetragen"
+      },
+      "subtitle": "Feiertage zählen nicht als Urlaubstage. Sie werden von Nager.Date importiert oder von Hand eingetragen."
+    },
+    "leave": {
+      "adjust": "Zeitraum ändern",
+      "adjustComment": "Grund der Änderung (steht im Verlauf)",
+      "adjusted": "Urlaub geändert.",
+      "approvalsHint": "Anträge, die auf deine Entscheidung warten. Öffne einen, um zu genehmigen oder abzulehnen; den Zeitraum kannst du dort vorher ändern.",
+      "approvalsNone": "Nichts zu entscheiden.",
+      "comment": "Hinweis an die Führungskraft",
+      "days": "Arbeitstage",
+      "decide": "Entscheiden",
+      "endHalf": "Der Urlaub endet am letzten Tag mittags",
+      "enter": "Eintragen",
+      "enterFor": "Urlaub eintragen für {{name}}",
+      "enterForHint": "Du trägst den Urlaub für {{name}} ein. Er ist sofort genehmigt, {{name}} sieht ihn im Planer.",
+      "entered": "Urlaub eingetragen und genehmigt",
+      "enteredBy": "Eingetragen von",
+      "fromMidday": "ab mittags",
+      "holidaysMissing": "Nach dem {{date}} sind keine Feiertage hinterlegt: Arbeitstage werden ohne Feiertage gezählt. Bitte einen Admin, sie zu ergänzen.",
+      "inYear": "Genehmigt {{year}} (Arbeitstage)",
+      "kind": "Art",
+      "noEntitlement": "Angezeigt werden nur genommene Tage. Anspruch und Resturlaub stehen in der Zeiterfassung.",
+      "openRequest": "Antrag öffnen",
+      "period": "Zeitraum",
+      "person": "Person",
+      "planner": {
+        "day": "Tag",
+        "empty": "Niemand anzuzeigen. Wähle ein anderes Team.",
+        "limit": "Der Planer zeigt etwa drei Jahre. Wähle ein späteres Startdatum, um weiterzugehen.",
+        "loadTip": "{{team}}: {{away}} von {{size}} abwesend, erlaubt {{allowed}}",
+        "me": "Nur ich",
+        "person": "Person",
+        "pickHint": "Zum Beantragen: in deiner Zeile (als Führungskraft auch in den Zeilen deiner Mitarbeitenden) erst den ersten, dann den letzten Tag anklicken (Wochenansicht: die Wochen). Ein farbiges Feld anklicken zeigt den Urlaub.",
+        "picking": "Jetzt den letzten Tag anklicken: {{from}} – {{to}}",
+        "reports": "Meine Mitarbeitenden",
+        "teamLoad": "Team abwesend (Spitze)",
+        "today": "Heute",
+        "week": "Woche",
+        "weekShort": "KW {{week}}",
+        "worstTeamLoad": "Schwächstes Team (Spitze)"
+      },
+      "plusRequested": "+ {{days}} beantragt",
+      "request": "Urlaub beantragen",
+      "requested": "Antrag an deine Führungskraft gesendet.",
+      "rule": {
+        "awayPeople": "Abwesend",
+        "detail": "bis zu {{away}} von {{size}} abwesend, erlaubt {{allowed}}",
+        "hint": "Du kannst trotzdem genehmigen. Die nächsthöhere Führungskraft wird informiert und findet die Tage unter Regelverstöße, solange sie bestehen.",
+        "hintOwn": "Du kannst den Antrag trotzdem senden. Deine Führungskraft entscheidet.",
+        "listHint": "Tage in den nächsten sechs Monaten, an denen mehr Personen eines Teams fehlen, als die Abwesenheitsregel erlaubt. Live aus dem aktuellen Urlaub berechnet, folgt also jedem neuen Antrag, jeder Änderung und jedem Zurückziehen. Du siehst die Teams von Personen, die mindestens zwei Ebenen unter dir stehen.",
+        "load": "Spitze",
+        "loadValue": "{{away}} von {{size}} abwesend, erlaubt {{allowed}}",
+        "none": "Keine Regelverstöße in den nächsten sechs Monaten.",
+        "team": "Team",
+        "title": "In diesem Zeitraum sind viele aus dem Team abwesend",
+        "titleApproved": "An einigen Tagen dieses Urlaubs sind zu viele aus dem Team abwesend",
+        "titleOwn": "In diesem Zeitraum wären viele aus deinem Team abwesend"
+      },
+      "send": "Antrag senden",
+      "startHalf": "Der Urlaub beginnt am ersten Tag mittags",
+      "status": "Status",
+      "statuses": {
+        "requested": "Wartet auf Genehmigung",
+        "approved": "Genehmigt",
+        "rejected": "Abgelehnt",
+        "cancelled": "Zurückgezogen"
+      },
+      "tabs": {
+        "approvals": "Zu entscheiden",
+        "mine": "Mein Urlaub",
+        "planner": "Planer",
+        "violations": "Regelverstöße"
+      },
+      "taskTitle": "{{type}} {{from}} – {{to}}",
+      "title": "Urlaub",
+      "untilMidday": "bis mittags",
+      "withdraw": "Zurückziehen",
+      "withdrawConfirm": "Diesen Urlaub zurückziehen?",
+      "withdrawn": "Urlaub zurückgezogen."
+    },
+    "notifications": {
+      "types": {
+        "leave_withdrawn": "Urlaub #{{number}} {{title}} wurde zurückgezogen",
+        "leave_adjusted": "Urlaub #{{number}} {{title}} wurde geändert",
+        "leave_rule_violation": "Urlaub #{{number}} {{title}} wurde über dem Abwesenheitslimit genehmigt ({{days}} Tage)"
+      }
+    },
+    "permissions": {
+      "literals": {
+        "leave": {
+          "view": {
+            "created": "Eigene Urlaubsanträge sehen",
+            "all": "Urlaubsanträge aller sehen"
+          },
+          "check": {
+            "created": "Eigene Urlaubsanträge kommentieren",
+            "all": "Urlaubsanträge aller kommentieren"
+          },
+          "create": {
+            "created": "Urlaub beantragen"
+          },
+          "edit": {
+            "all": "Urlaubsanträge aller zurückziehen und korrigieren"
+          }
+        }
+      }
+    },
+    "entities": {
+      "leave": "Urlaub"
+    }
+  }
+}

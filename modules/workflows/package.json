@@ -1,0 +1,16 @@
+{
+  "name": "@rbp/module-workflows",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/module.tsx",
+    "./src/*": "./src/*"
+  },
+  "dependencies": {
+    "@rbp/core": "*",
+    "@rbp/ui": "*",
+    "@rbp/module-task-family": "*",
+    "react": "^19.2.8"
+  }
+}

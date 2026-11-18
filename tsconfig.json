@@ -1,0 +1,71 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "platform/packages/core"
+    },
+    {
+      "path": "platform/packages/ui"
+    },
+    {
+      "path": "modules/home"
+    },
+    {
+      "path": "modules/messaging"
+    },
+    {
+      "path": "modules/companies"
+    },
+    {
+      "path": "modules/products"
+    },
+    {
+      "path": "modules/fleet"
+    },
+    {
+      "path": "modules/offers"
+    },
+    {
+      "path": "apps/compass"
+    },
+    {
+      "path": "apps/npm"
+    },
+    {
+      "path": "modules/npm-dashboard"
+    },
+    {
+      "path": "modules/dock-reports"
+    },
+    {
+      "path": "modules/npm-email"
+    },
+    {
+      "path": "modules/tasks"
+    },
+    {
+      "path": "modules/task-family"
+    },
+    {
+      "path": "modules/workflows"
+    },
+    {
+      "path": "modules/assets"
+    },
+    {
+      "path": "modules/tickets"
+    },
+    {
+      "path": "modules/items"
+    },
+    {
+      "path": "modules/people"
+    },
+    {
+      "path": "modules/leave"
+    },
+    {
+      "path": "modules/help"
+    }
+  ]
+}

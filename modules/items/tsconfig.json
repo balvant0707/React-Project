@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "src/**/*.json"
+  ],
+  "references": [
+    {
+      "path": "../../platform/packages/core"
+    },
+    {
+      "path": "../../platform/packages/ui"
+    },
+    {
+      "path": "../tickets"
+    },
+    {
+      "path": "../assets"
+    },
+    {
+      "path": "../task-family"
+    },
+    {
+      "path": "../tasks"
+    },
+    {
+      "path": "../messaging"
+    }
+  ]
+}

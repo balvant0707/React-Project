@@ -1,0 +1,113 @@
+/* Shared page styling, taken over from the NPM index.css (the parts that are not specific to one page). */
+.page-banner-crumb { text-decoration: none; }
+.page-banner-crumb:hover { text-decoration: underline; }
+
+/* Tighter page gutters: Refine's ThemedLayout wraps the routed content in a div with padding 24. */
+.ant-layout-content > div { padding: 12px !important; }
+
+/* Compact "no data" placeholders everywhere (antd's default image is ~100px tall). */
+.ant-empty-image { height: 28px !important; margin-bottom: 4px !important; }
+.ant-empty-image svg { height: 28px; }
+.ant-empty { font-size: 12px; }
+
+/* Numbers in input fields are always right-aligned, without the up/down spinner (it covers the digits on hover). */
+.ant-input-number .ant-input-number-input { text-align: right; }
+.ant-input-number .ant-input-number-handler-wrap { display: none; }
+
+/* Phone: every antd table becomes a list of cards (one card per row, "label: value" lines; the labels are
+   copied from the header by utils/tableCards.ts). A table that has to stay a grid opts out with the class
+   `table-keep`. Same approach as the maintenance tool. */
+@media (max-width: 767px) {
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-measure-row,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) colgroup { display: none; }
+  /* The header stays as a row of sort / filter chips (only columns that can sort or filter); clicking works as on the desktop. */
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead > tr { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 8px; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead > tr > th {
+    display: none;
+    padding: 4px 10px !important;
+    border: 1px solid var(--ant-color-border-secondary, #f0f0f0) !important;
+    border-radius: 14px;
+    font-size: 12px;
+    background: var(--ant-color-bg-container, #fff) !important;
+  }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead > tr > th.ant-table-column-has-sorters,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead > tr > th.ant-table-filter-column { display: block; min-width: 0 !important; width: auto !important; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-thead > tr > th::before { display: none; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-content,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-body { overflow: visible !important; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) table,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) tbody { display: block; width: 100% !important; min-width: 0 !important; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) tr.ant-table-row,
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) tr.ant-table-placeholder {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: var(--ant-color-bg-container, #fff);
+    border: 1px solid var(--ant-color-border-secondary, #f0f0f0);
+    border-radius: 8px;
+  }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) tr.ant-table-expanded-row { display: block; margin: -4px 0 8px; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) tr.ant-table-expanded-row > td { display: block; padding: 0 !important; border: 0 !important; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0 !important;
+    padding: 3px 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    position: static !important;
+    overflow-wrap: anywhere;
+    text-align: left !important;
+  }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell[data-label]::before {
+    content: attr(data-label);
+    flex: 0 0 34%;
+    max-width: 34%;
+    font-size: 12px;
+    color: var(--ant-color-text-secondary, #666);
+  }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell[data-first] { display: block; font-weight: 600; font-size: 15px; padding-bottom: 5px !important; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell[data-first]::before { display: none; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell[data-empty] { display: none; }
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) td.ant-table-cell > * { min-width: 0; max-width: 100%; }
+}
+
+/* Phone: the button row of a list page (search, Add filter, switches, Columns, New ...) wraps instead of widening the page. */
+@media (max-width: 767px) {
+  .ant-page-header-heading { flex-wrap: wrap; }
+  .ant-page-header-heading-extra { max-width: 100%; margin-left: 0; }
+  .ant-page-header-heading-extra .ant-space { flex-wrap: wrap; max-width: 100%; }
+}
+
+/* Refine's menu button (fixed at top: 64px, i.e. on top of the page banner; it replaces the sider below 992px) moves into
+   the app header's left slot. On a phone the header and the button slide away together while scrolling down (data-header-hidden,
+   utils/useHideHeaderOnScroll.ts). */
+@media (min-width: 768px) and (max-width: 991px) {
+  #app-header { padding-left: 52px !important; }
+  button.ant-btn:has(.anticon-bars) {
+    top: 8px !important;
+    left: 8px !important;
+    width: 36px !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+  }
+}
+@media (max-width: 767px) {
+  /* On a phone the bottom tab "Menu" opens the sidebar drawer (components/bottomTabs.tsx): no floating menu button. */
+  button.ant-btn[style*="position: fixed"]:has(.anticon-bars) { display: none; }
+  #app-header { transition: transform 0.2s ease; }
+  html[data-header-hidden] #app-header { transform: translateY(-100%); }
+  /* Room for the bottom tabs; --bar-gap keeps them clear of the home bar. */
+  :root { --bar-gap: max(8px, calc(env(safe-area-inset-bottom) - 22px)); }
+  .ant-layout-content { padding-bottom: calc(80px + var(--bar-gap)); }
+  /* The sort / filter chips are not sticky on a phone, and a table that stays a grid scrolls inside itself instead of widening the page. */
+  .ant-table-wrapper:not(.table-keep):not([data-grid]) .ant-table-sticky-holder { position: static !important; top: auto !important; }
+  .ant-table-wrapper[data-grid] .ant-table-content { overflow-x: auto; }
+}
+
+/* The side menu scrolls when it is taller than the window, without a visible scroll bar. */
+.sider-menu { scrollbar-width: none; -ms-overflow-style: none; }
+.sider-menu::-webkit-scrollbar { display: none; }

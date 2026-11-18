@@ -1,0 +1,14 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "mail": {
+          "access": "Use the Mail page and my mailboxes (read, reply, assign, write)"
+        }
+      }
+    },
+    "entities": {
+      "mail": "Mail"
+    }
+  }
+}

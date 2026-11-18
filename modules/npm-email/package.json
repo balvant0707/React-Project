@@ -1,0 +1,27 @@
+{
+  "name": "@rbp/module-npm-email",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/module.tsx",
+    "./src/*": "./src/*"
+  },
+  "dependencies": {
+    "@rbp/core": "*",
+    "@rbp/ui": "*",
+    "@ant-design/icons": "^5.6.1",
+    "antd": "^5.29.3",
+    "dayjs": "^1.11.13",
+    "react": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "@rbp/module-companies": "*",
+    "@rbp/module-products": "*",
+    "@rbp/module-fleet": "*",
+    "@rbp/module-offers": "*",
+    "@rbp/module-messaging": "*",
+    "@tiptap/pm": "^3.32.0",
+    "@tiptap/react": "^3.32.0",
+    "@tiptap/starter-kit": "^3.32.0"
+  }
+}

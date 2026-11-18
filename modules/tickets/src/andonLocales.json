@@ -1,0 +1,72 @@
+{
+  "en": {
+    "admin": {
+      "ticketQueues": {
+        "groupKey": "Group",
+        "groupKeyHint": "Optional. Types with the same group are shown together on the kiosk board and reported together (a-z, 0-9, _).",
+        "defaultPriority": "Starting priority",
+        "defaultPriorityHint": "Tickets of this type start with this priority; it sets the colour of the andon light. Empty: the ticket's own default.",
+        "publicReport": "Offer on the public QR page",
+        "publicReportHint": "Off by default. Anyone who scans a QR sticker (no sign-in) sees this type as a button; only its name is shown. Keep internal types off."
+      }
+    },
+    "tickets": {
+      "pickQueue": "What is this about?",
+      "pickType": "What is the problem?",
+      "titleOptional": "Short description (optional)",
+      "change": "Change"
+    },
+    "report": {
+      "pickType": "What is the problem?",
+      "titleOptional": "Short description (optional)",
+      "change": "Change"
+    },
+    "kiosk": {
+      "title": "Call for help",
+      "raised": "Call raised (#{{number}})",
+      "waiting": "Waiting for help",
+      "acknowledged": "Someone is on it",
+      "noCalls": "No open calls",
+      "openCalls_one": "{{count}} open call",
+      "openCalls_other": "{{count}} open calls",
+      "pickStation": "Choose the station of this PC.",
+      "pickStationHint": "The address keeps the choice (…/andon?asset=…). Bookmark it on the PC.",
+      "noQueue": "This device may not report in this queue."
+    }
+  },
+  "de": {
+    "admin": {
+      "ticketQueues": {
+        "groupKey": "Gruppe",
+        "groupKeyHint": "Optional. Typen mit derselben Gruppe erscheinen auf der Kiosk-Tafel zusammen und werden gemeinsam ausgewertet (a-z, 0-9, _).",
+        "defaultPriority": "Startpriorität",
+        "defaultPriorityHint": "Tickets dieses Typs starten mit dieser Priorität; sie bestimmt die Farbe des Andon-Lichts. Leer: die Standardpriorität des Tickets.",
+        "publicReport": "Auf der öffentlichen QR-Seite anbieten",
+        "publicReportHint": "Standardmäßig aus. Wer einen QR-Aufkleber scannt (ohne Anmeldung), sieht diesen Typ als Schaltfläche; nur der Name wird gezeigt. Interne Typen nicht freigeben."
+      }
+    },
+    "tickets": {
+      "pickQueue": "Worum geht es?",
+      "pickType": "Was ist das Problem?",
+      "titleOptional": "Kurzbeschreibung (optional)",
+      "change": "Ändern"
+    },
+    "report": {
+      "pickType": "Was ist das Problem?",
+      "titleOptional": "Kurzbeschreibung (optional)",
+      "change": "Ändern"
+    },
+    "kiosk": {
+      "title": "Hilfe rufen",
+      "raised": "Ruf ausgelöst (#{{number}})",
+      "waiting": "Wartet auf Hilfe",
+      "acknowledged": "Jemand kümmert sich",
+      "noCalls": "Keine offenen Rufe",
+      "openCalls_one": "{{count}} offener Ruf",
+      "openCalls_other": "{{count}} offene Rufe",
+      "pickStation": "Station dieses PCs wählen.",
+      "pickStationHint": "Die Adresse merkt sich die Wahl (…/andon?asset=…). Als Lesezeichen auf dem PC speichern.",
+      "noQueue": "Dieses Gerät darf in dieser Warteschlange nichts melden."
+    }
+  }
+}

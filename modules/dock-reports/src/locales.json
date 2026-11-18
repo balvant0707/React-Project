@@ -1,0 +1,36 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "dock_reports": {
+          "view": {
+            "assigned": "View dock reports assigned to me",
+            "team": "View dock reports of my teams",
+            "account": "View dock reports of the companies I am account owner of (and their group companies)",
+            "all": "View all dock reports"
+          },
+          "edit": {
+            "assigned": "Edit dock reports assigned to me",
+            "team": "Edit dock reports of my teams",
+            "account": "Edit dock reports of the companies I am account owner of (and their group companies)",
+            "all": "Edit all dock reports"
+          },
+          "create": {
+            "assigned": "Create dock reports assigned to me",
+            "team": "Create dock reports of my teams",
+            "all": "Create all dock reports"
+          },
+          "delete": {
+            "assigned": "Delete dock reports assigned to me",
+            "team": "Delete dock reports of my teams",
+            "all": "Delete all dock reports"
+          }
+        }
+      }
+    },
+    "entities": {
+      "dock_reports": "Dock reports"
+    }
+  },
+  "de": {}
+}

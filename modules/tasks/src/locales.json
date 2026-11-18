@@ -1,0 +1,846 @@
+{
+  "en": {
+    "nav": {
+      "tasks": "Tasks"
+    },
+    "tasks": {
+      "openSubtasksTitle": "Open subtasks",
+      "openSubtasksHint": "{{count}} subtask(s) are not finished yet. Complete this task anyway?",
+      "completeAnyway": "Complete anyway",
+      "reopenTitle": "Reopen this task?",
+      "reopenHint": "The task goes back to the step it was finished or cancelled from. The activity shows who reopened it.",
+      "reopenComment": "Reason (optional)",
+      "reopen": "Reopen",
+      "cancelTitle": "Cancel this task?",
+      "cancelHint": "A cancelled task cannot be resumed.",
+      "requester": "Requester",
+      "taskOwner": "Assignee of the task",
+      "taskTeam": "Team of the task",
+      "roleInTeam": "{{role}} in {{team}}",
+      "roleInScope": {
+        "task_team": "{{role}} in the task's team",
+        "requester_team": "{{role}} in a team of the requester"
+      },
+      "forward": {
+        "button": "Forward",
+        "title": "Forward task",
+        "ok": "Forward",
+        "to": "To",
+        "comment": "Comment",
+        "commentPlaceholder": "Optional: what it is about, what has been done",
+        "hintStep": "The current step goes to this person; it is their turn now. The task's assignee stays accountable. Choose yourself to take the step over.",
+        "hintAssignee": "The task gets a new assignee. If the person is not in the task's team, the team is removed.",
+        "done": "Forwarded",
+        "errors": {
+          "already": "The task is already with this person.",
+          "requester": "An approval cannot go to the requester.",
+          "notAllowed": "You may not forward this task."
+        }
+      },
+      "needsTeamOrPerson": "Please choose a team or a person.",
+      "supervisorOfRequester_one": "Supervisor of the requester",
+      "supervisorOfRequester_other": "Supervisor of the requester (level {{count}})",
+      "actions": {
+        "start": "Start",
+        "send": "Send for approval",
+        "approve": "Approve",
+        "reject": "Reject",
+        "ordered": "Mark as ordered",
+        "complete": "Complete task"
+      },
+      "count_one": "{{count}} task",
+      "count_other": "{{count}} tasks",
+      "mine": "My tasks",
+      "new": "New task",
+      "newSubtask": "New subtask",
+      "create": "Create",
+      "forRecord": "For: {{record}}",
+      "noTypes": "Your roles may not start any task type.",
+      "assigneeHint": "Without team and person the task is yours.",
+      "blocksParent": "Must be done before the parent task",
+      "errors": {
+        "typeNotAllowed": "You may not create tasks of this type."
+      },
+      "fields": {
+        "title": "Title",
+        "status": "Status",
+        "assignee": "Assignee",
+        "team": "Team",
+        "type": "Type",
+        "priority": "Priority",
+        "dueDate": "Due",
+        "description": "Description",
+        "worksOn": "With",
+        "record": "Record",
+        "createdBy": "Created by",
+        "step": "Step",
+        "parent": "Parent task",
+        "completedAt": "Finished",
+        "owner": "Owner"
+      },
+      "filters": {
+        "person": "Person (any role)"
+      },
+      "blocked": "Waits for {{count}} subtask(s)",
+      "inTeam": " in ",
+      "nobody": "Nobody yet",
+      "recordTypes": {
+        "specifications": "Specification",
+        "orders": "Order",
+        "companies": "Company",
+        "hull_events": "Hull event",
+        "vessels": "Vessel"
+      },
+      "notFound": "Task not found",
+      "cancel": "Cancel task",
+      "cancelled": "Cancelled",
+      "route": "Route",
+      "subtasks": "Subtasks",
+      "noSubtasks": "No subtasks",
+      "history": "History",
+      "recordHidden": "A record you cannot open",
+      "originallyDue": "Originally due {{date}}",
+      "overdue": "Overdue",
+      "actionComment": "Comment",
+      "showFinished": "Show finished ({{count}})",
+      "noneForRecord": "No tasks yet",
+      "anyEditor": "Whoever may edit the task",
+      "confirmFinish": "Finish the task now?",
+      "confirmStep": "Complete this step and pass the task on now?",
+      "sortBy": {
+        "due_date": "Due date",
+        "priority": "Priority",
+        "task_number": "Number"
+      }
+    },
+    "appSettings": {
+      "days": "days",
+      "general": "general",
+      "typeDueDays": "Default deadline (days)",
+      "typeDueDaysHint": "Empty = general setting (Configuration → Deadlines), 0 = no default for this type."
+    },
+    "common": {
+      "actions": "Actions",
+      "anyone": "Anyone",
+      "deleteConfirm": "Delete this entry?",
+      "new": "New"
+    },
+    "fields": {
+      "active": "Active",
+      "key": "Key",
+      "nameDe": "Name (German)",
+      "nameEn": "Name (English)",
+      "owner": "Owner",
+      "role": "Role",
+      "status": "Status",
+      "team": "Team"
+    },
+    "status": {
+      "open": "Open",
+      "in_progress": "In progress",
+      "waiting_for_approval": "Waiting for approval",
+      "waiting_for_procurement": "Waiting for procurement",
+      "waiting_for_delivery": "Waiting for delivery",
+      "converted_to_task": "Converted to task",
+      "resolved": "Resolved",
+      "done": "Done",
+      "closed": "Closed",
+      "cancelled": "Cancelled",
+      "active": "Active",
+      "inactive": "Inactive",
+      "decommissioned": "Decommissioned",
+      "waiting_for_requester": "Waiting for requester"
+    },
+    "taskTypes": {
+      "blocksParent": "Subtasks of this type block their parent task",
+      "blocksParentHint": "A subtask of this type is a prerequisite: the parent task shows as blocked until it is finished. It stays open and overdue as usual. Can be switched per subtask.",
+      "new": "New task type",
+      "steps": "Steps",
+      "route": "Route",
+      "hint": "A route is an ordered list of steps. Each step names who works it and which actions lead where.",
+      "routeHint": "A new task starts in the first step. An action moves it to another step, or finishes it.",
+      "stepN": "Step {{n}}",
+      "roleHint": "Only holders of this role can act. Empty = anyone with edit access.",
+      "actions": "Actions (transitions)",
+      "actionKey": "action key",
+      "finish": "Finish the task",
+      "requiresComment": "Comment required",
+      "addAction": "Add action",
+      "ownerHint": "The owner may edit this task type (with the right “Edit own task types”) but not delete it, and can hand it over to someone else.",
+      "hiddenFields": "Hide fields on the task",
+      "hiddenFieldsHint": "The new-task form does not offer a hidden field either. On the task a field that holds a value stays visible. Planned date, title, due date, priority and assignee are always shown.",
+      "hideable": {
+        "asset": "Asset",
+        "team": "Team",
+        "work_hours": "Work hours",
+        "downtime": "Downtime",
+        "checklist": "Worksheet",
+        "costs": "Costs"
+      },
+      "defaultTeam": "Default team",
+      "defaultTeamHint": "New tasks of this type go to this team when neither a team nor a person is chosen.",
+      "quickLinks": "Allowed subtask types",
+      "noSubtasks": "None: this type takes no subtasks",
+      "quickLinksHint": "Only these task types can be created as a subtask of a task of this type. Empty means no subtasks: the task then has no \"Add subtask\". With up to four types the task also shows one-click buttons.",
+      "addStep": "Add step",
+      "errors": {
+        "noSteps": "A task type needs at least one step.",
+        "duplicateStepKey": "Step keys must be unique.",
+        "noActions": "Step “{{step}}” needs at least one action.",
+        "unknownTarget": "Action “{{action}}” of step “{{step}}” points to a step that does not exist.",
+        "stepInUse": "{{count}} running task(s) are in a step you removed.",
+        "inUse": "This task type is used by tasks and cannot be deleted. Deactivate it instead.",
+        "unreachable": "Step “{{step}}” cannot be reached from the first step.",
+        "noWayOut": "Step “{{step}}” has no way to finish the task.",
+        "purposeDelete": "This task type has a special function and cannot be deleted. Assign the special function to another type first.",
+        "decisionNeedsChoice": "The decision step “{{step}}” needs at least two actions to choose between.",
+        "decisionNeedsAssignee": "The decision step “{{step}}” has to name who decides: a role, a team, the supervisor, the requester or the task owner. “Anyone” does not work here.",
+        "teamScopeNeedsTeam": "Step \"{{step}}\": pick the team.",
+        "decisionTaskTeam": "Step \"{{step}}\": a decision step cannot sit with the task's team, the requester chooses it."
+      },
+      "assigneeKind": "Worked by",
+      "kindRole": "A role",
+      "kindSupervisor": "Supervisor of the requester",
+      "supervisorLevel": "Levels up",
+      "supervisorLevelHint": "1 = direct supervisor, 2 = the supervisor’s supervisor. Stops at the top of the chain.",
+      "fallbackRole": "If nobody is found",
+      "fallbackDefault": "Default role (Admin > Settings)",
+      "actionKind": "Kind",
+      "kinds": {
+        "positive": "Positive",
+        "neutral": "Neutral",
+        "negative": "Negative"
+      },
+      "labelDe": "Button text (de)",
+      "labelEn": "Button text (en)",
+      "saved": "Task type saved.",
+      "general": "General",
+      "defaults": "Defaults for new tasks",
+      "internalNote": "Internal note",
+      "internalNoteHint": "For admins: what the route is for and how it works. Not shown to users.",
+      "startPage": "Start page",
+      "showOnStartPage": "Show on the start page",
+      "showOnStartPageHint": "Only people who may start this type see it there (see “Who can start”).",
+      "onStartPage": "Start page",
+      "shortDescription": "Short description",
+      "shortDescriptionHint": "One or two sentences in the words of the people who start it: what it is for and what happens next.",
+      "keywords": "Search words",
+      "keywordsHint": "Words people might search for that are not in the name, in both languages (e.g. gloves PPE Handschuhe PSA).",
+      "whoCanStart": "Who can start",
+      "everyRole": "Every role: no role is restricted to certain task types.",
+      "notFor": "Not for:",
+      "whoCanStartHint": "Set per role on the roles page (“Task types” column). Admins and users without a role may always start it; a create right for tasks is needed as well.",
+      "kindTeam": "A team",
+      "kindTaskOwner": "The task's assignee",
+      "kindRequester": "The requester",
+      "fallbackRoleHints": {
+        "requester_supervisor": "Role that decides when the requester has no supervisor (with a login). Empty = admins only.",
+        "requester": "Role that gets the step when the requester cannot sign in (e.g. a task from a series). Empty = admins only.",
+        "task_owner": "Without an assignee the step goes to the task's team; without either to this role. Empty = admins only.",
+        "role_in_team": "Role that gets the step when no holder of the role is in the team (or the task has no team). Empty = default role (Admin > Settings).",
+        "task_team": "Without a team on the task the step goes to this role. Empty = default role (Settings)."
+      },
+      "itemMode": "Items",
+      "itemModes": {
+        "none": "No items",
+        "use": "Need and use",
+        "order": "Order",
+        "noneHint": "Tasks of this type have nothing to do with items.",
+        "useHint": "Tasks list the items they need or used, order missing ones with a purchase request and ask when completed. For maintenance and inspections.",
+        "orderHint": "Tasks order items: their own lines and those of the task they were started from. With a copy view for the ERP. For purchase requests."
+      },
+      "itemCategories": "Categories offered",
+      "itemCategoriesHint": "Only items of these categories can be put on tasks of this type. Empty = all.",
+      "allCategories": "All categories",
+      "hooks": "Special functions",
+      "hooksHint": "Functions that run in the same moment as the step change, e.g. writing a decision back. Without any, the step only routes.",
+      "hook": "Function",
+      "hookEvent": "When",
+      "addHook": "Add special function",
+      "hookEvents": {
+        "enter": "The task arrives in this step",
+        "action": "An action is taken in this step (moves on or finishes)",
+        "leave": "The task leaves this step",
+        "done": "The task is finished from this step",
+        "cancelled": "The task is cancelled in this step"
+      },
+      "typeHooks": "Special functions of the whole type",
+      "typeHooksHint": "Run for every step of this type, e.g. what happens to the ticket a task was made from. An ordering type always gets the order functions.",
+      "purpose": "Special function",
+      "purposeHint": "This type fulfils a special function of the program (for example leave). The route stays free, but it has to contain the special functions the purpose needs. There is one type per function.",
+      "purposeProblems": "The route lacks special functions this purpose needs: {{functions}}. It does not work until they are added.",
+      "purposes": {
+        "leave": "Absence"
+      },
+      "trackAsRequest": "In “My requests”",
+      "trackAsRequestHint": "Tasks of this type show up for the person who made them under “To decide” > “My requests”. Useful for types with an approval somewhere in the route.",
+      "whoWorks": "Who works the step",
+      "decisionStep": "Decision step",
+      "noDecisionStep": "Ordinary step",
+      "decisionStepHint": "A person chooses between the actions of this step (for example approve or reject, variant A or B). The task then appears under “To decide” for whoever the step waits for, and the type can show up in “My requests”.",
+      "unnamedStep": "(unnamed)",
+      "routeOverview": "Route at a glance",
+      "actionGoesTo": "Leads to",
+      "teamScope": "Only members of",
+      "teamScopeNone": "Every holder of the role",
+      "teamScopeHint": "Narrows the step to the holders of the role who are members of this team. If there is none: the fallback role. On a decision step only teams not created by users count, and never the task's team.",
+      "teamScopes": {
+        "task_team": "the task's team",
+        "requester_team": "a team of the requester",
+        "fixed": "a fixed team"
+      },
+      "stepItems": "Items of this step",
+      "stepItemsHint": "Go into the worksheet of every new task of this type. A required item holds the step: it moves on only once the item is answered (the action's dialog asks for it). Rejecting and sending back stay possible.",
+      "kindTaskTeam": "The team of the task"
+    },
+    "admin": {
+      "roleTaskTypes": "Task types",
+      "allTaskTypes": "All task types"
+    },
+    "feed": {
+      "events": {
+        "priority_changed": "{{actor}} changed the priority from {{old}} to {{new}}.",
+        "task_created": "{{actor}} created this task.",
+        "task_created_subtask": "{{actor}} created this task as a subtask.",
+        "task_subtask_added": "{{actor}} added subtask #{{number}} {{title}}.",
+        "task_created_from_ticket": "{{actor}} created this task from a ticket.",
+        "task_step_changed": "{{actor}} chose “{{action}}”: {{from}} → {{to}}.",
+        "task_step_changed_to": "{{actor}} chose “{{action}}”: {{from}} → {{to}} ({{user}}).",
+        "task_completed": "{{actor}} marked the task as done.",
+        "task_cancelled": "{{actor}} cancelled the task.",
+        "task_planning_changed": "{{actor}} {{parts}}.",
+        "due_date_changed": "{{actor}} set the due date to {{date}}.",
+        "task_created_recurring": "A recurring rule created this task.",
+        "title_changed": "{{actor}} renamed the task from “{{old}}” to “{{new}}”.",
+        "task_forwarded": "{{actor}} forwarded the task to {{user}}.",
+        "task_forwarded_step": "{{actor}} forwarded step {{step}} to {{user}}.",
+        "task_forwarded_taken": "{{actor}} took over step {{step}}.",
+        "task_claimed": "{{actor}} took over the task.",
+        "task_reopened": "{{actor}} reopened the task.{{comment}}"
+      }
+    },
+    "priority": {
+      "high": "High",
+      "low": "Low",
+      "normal": "Normal",
+      "urgent": "Urgent"
+    },
+    "due": {
+      "today": "today",
+      "tomorrow": "tomorrow",
+      "inDays_one": "in {{count}} day",
+      "inDays_other": "in {{count}} days",
+      "overdue_one": "{{count}} day overdue",
+      "overdue_other": "{{count}} days overdue"
+    },
+    "permissions": {
+      "literals": {
+        "tasks": {
+          "view": {
+            "assigned": "See tasks assigned to me or whose current step is with me",
+            "created": "See tasks I created",
+            "team": "See tasks of my teams or whose current step is with one of my teams",
+            "assigned_assets": "See tasks on assets my team is responsible for",
+            "all": "See all tasks"
+          },
+          "check": {
+            "assigned": "Work on tasks assigned to me or whose current step is with me (tick the worksheet, comment, attach files)",
+            "created": "Work on tasks I created (tick the worksheet, comment, attach files)",
+            "team": "Work on tasks of my teams or whose current step is with one of my teams (tick the worksheet, comment, attach files)",
+            "assigned_assets": "Work on tasks on assets my team is responsible for (tick the worksheet, comment, attach files)",
+            "all": "Work on all tasks (tick the worksheet, comment, attach files)"
+          },
+          "edit": {
+            "assigned": "Edit tasks assigned to me or whose current step is with me",
+            "created": "Edit tasks I created",
+            "team": "Edit tasks of my teams or whose current step is with one of my teams",
+            "assigned_assets": "Edit tasks on assets my team is responsible for",
+            "all": "Edit all tasks"
+          },
+          "create": {
+            "created": "Create tasks that I own",
+            "team": "Create tasks for my teams",
+            "assigned_assets": "Create tasks on assets my team is responsible for",
+            "all": "Create tasks"
+          },
+          "delete": {
+            "assigned": "Delete tasks assigned to me or whose current step is with me",
+            "created": "Delete tasks I created",
+            "team": "Delete tasks of my teams or whose current step is with one of my teams",
+            "assigned_assets": "Delete tasks on assets my team is responsible for",
+            "all": "Delete all tasks"
+          }
+        },
+        "initiatives": {
+          "view": {
+            "assigned": "See initiatives assigned to me or whose current step is with me",
+            "created": "See initiatives I created",
+            "team": "See initiatives of my teams or whose current step is with one of my teams",
+            "assigned_assets": "See initiatives on assets my team is responsible for",
+            "all": "See all initiatives"
+          },
+          "check": {
+            "assigned": "Work on initiatives assigned to me or whose current step is with me (tick the worksheet, comment, attach files)",
+            "created": "Work on initiatives I created (tick the worksheet, comment, attach files)",
+            "team": "Work on initiatives of my teams or whose current step is with one of my teams (tick the worksheet, comment, attach files)",
+            "assigned_assets": "Work on initiatives on assets my team is responsible for (tick the worksheet, comment, attach files)",
+            "all": "Work on all initiatives (tick the worksheet, comment, attach files)"
+          },
+          "edit": {
+            "assigned": "Edit initiatives assigned to me or whose current step is with me",
+            "created": "Edit initiatives I created",
+            "team": "Edit initiatives of my teams or whose current step is with one of my teams",
+            "assigned_assets": "Edit initiatives on assets my team is responsible for",
+            "all": "Edit all initiatives"
+          },
+          "create": {
+            "created": "Create initiatives that I own",
+            "team": "Create initiatives for my teams",
+            "assigned_assets": "Create initiatives on assets my team is responsible for",
+            "all": "Create initiatives"
+          },
+          "delete": {
+            "assigned": "Delete initiatives assigned to me or whose current step is with me",
+            "created": "Delete initiatives I created",
+            "team": "Delete initiatives of my teams or whose current step is with one of my teams",
+            "assigned_assets": "Delete initiatives on assets my team is responsible for",
+            "all": "Delete all initiatives"
+          }
+        },
+        "task_types": {
+          "edit": {
+            "own": "Edit own task types",
+            "all": "Edit all task types"
+          }
+        }
+      }
+    },
+    "entities": {
+      "tasks": "Tasks",
+      "initiatives": "Initiatives",
+      "task_types": "Task types"
+    }
+  },
+  "de": {
+    "nav": {
+      "tasks": "Aufgaben"
+    },
+    "tasks": {
+      "openSubtasksTitle": "Offene Unteraufgaben",
+      "openSubtasksHint": "{{count}} Unteraufgabe(n) sind noch nicht abgeschlossen. Diese Aufgabe trotzdem abschließen?",
+      "completeAnyway": "Trotzdem abschließen",
+      "reopenTitle": "Aufgabe wieder öffnen?",
+      "reopenHint": "Die Aufgabe geht zurück in den Schritt, aus dem sie abgeschlossen oder abgebrochen wurde. Im Verlauf steht, wer sie wieder geöffnet hat.",
+      "reopenComment": "Grund (optional)",
+      "reopen": "Wieder öffnen",
+      "cancelTitle": "Diese Aufgabe abbrechen?",
+      "cancelHint": "Eine abgebrochene Aufgabe kann nicht fortgesetzt werden.",
+      "requester": "Anfragende Person",
+      "taskOwner": "Zugewiesene Person der Aufgabe",
+      "taskTeam": "Team der Aufgabe",
+      "roleInTeam": "{{role}} in {{team}}",
+      "roleInScope": {
+        "task_team": "{{role}} im Team der Aufgabe",
+        "requester_team": "{{role}} in einem Team des Anfragenden"
+      },
+      "forward": {
+        "button": "Weiterleiten",
+        "title": "Aufgabe weiterleiten",
+        "ok": "Weiterleiten",
+        "to": "An",
+        "comment": "Kommentar",
+        "commentPlaceholder": "Optional: worum es geht, was schon getan ist",
+        "hintStep": "Der aktuelle Schritt geht an diese Person; sie ist jetzt am Zug. Die zugewiesene Person der Aufgabe bleibt verantwortlich. Wählst du dich selbst, übernimmst du den Schritt.",
+        "hintAssignee": "Die Aufgabe bekommt eine neue zugewiesene Person. Gehört sie nicht zum Team der Aufgabe, wird das Team entfernt.",
+        "done": "Weitergeleitet",
+        "errors": {
+          "already": "Die Aufgabe liegt schon bei dieser Person.",
+          "requester": "Eine Freigabe kann nicht an die anfragende Person gehen.",
+          "notAllowed": "Du darfst diese Aufgabe nicht weiterleiten."
+        }
+      },
+      "needsTeamOrPerson": "Bitte ein Team oder eine Person angeben.",
+      "supervisorOfRequester_one": "Vorgesetzte der anfragenden Person",
+      "supervisorOfRequester_other": "Vorgesetzte der anfragenden Person (Ebene {{count}})",
+      "actions": {
+        "start": "Starten",
+        "send": "Zur Freigabe senden",
+        "approve": "Freigeben",
+        "reject": "Ablehnen",
+        "ordered": "Als bestellt markieren",
+        "complete": "Aufgabe abschließen"
+      },
+      "count_one": "{{count}} Aufgabe",
+      "count_other": "{{count}} Aufgaben",
+      "mine": "Meine Aufgaben",
+      "new": "Neue Aufgabe",
+      "newSubtask": "Neue Unteraufgabe",
+      "create": "Anlegen",
+      "forRecord": "Zu: {{record}}",
+      "noTypes": "Deine Rollen dürfen keinen Aufgabentyp starten.",
+      "assigneeHint": "Ohne Team und Person ist die Aufgabe deine.",
+      "blocksParent": "Muss vor der übergeordneten Aufgabe erledigt sein",
+      "errors": {
+        "typeNotAllowed": "Du darfst keine Aufgaben dieses Typs anlegen."
+      },
+      "fields": {
+        "title": "Titel",
+        "status": "Status",
+        "assignee": "Zugewiesen an",
+        "team": "Team",
+        "type": "Typ",
+        "priority": "Priorität",
+        "dueDate": "Fällig",
+        "description": "Beschreibung",
+        "worksOn": "Liegt bei",
+        "record": "Bezug",
+        "createdBy": "Angelegt von",
+        "step": "Schritt",
+        "parent": "Übergeordnete Aufgabe",
+        "completedAt": "Abgeschlossen",
+        "owner": "Verantwortliche/r"
+      },
+      "filters": {
+        "person": "Person (beliebige Rolle)"
+      },
+      "blocked": "Wartet auf {{count}} Unteraufgabe(n)",
+      "inTeam": " in ",
+      "nobody": "Noch niemand",
+      "recordTypes": {
+        "specifications": "Spezifikation",
+        "orders": "Auftrag",
+        "companies": "Firma",
+        "hull_events": "Hull Event",
+        "vessels": "Schiff"
+      },
+      "notFound": "Aufgabe nicht gefunden",
+      "cancel": "Aufgabe abbrechen",
+      "cancelled": "Abgebrochen",
+      "route": "Ablauf",
+      "subtasks": "Unteraufgaben",
+      "noSubtasks": "Keine Unteraufgaben",
+      "history": "Verlauf",
+      "recordHidden": "Ein Datensatz, den du nicht öffnen darfst",
+      "originallyDue": "Ursprünglich fällig {{date}}",
+      "overdue": "Überfällig",
+      "actionComment": "Kommentar",
+      "showFinished": "Abgeschlossene zeigen ({{count}})",
+      "noneForRecord": "Noch keine Aufgaben",
+      "anyEditor": "Wer die Aufgabe bearbeiten darf",
+      "confirmFinish": "Die Aufgabe jetzt abschließen?",
+      "confirmStep": "Diesen Schritt jetzt abschließen und weitergeben?",
+      "sortBy": {
+        "due_date": "Fälligkeit",
+        "priority": "Priorität",
+        "task_number": "Nummer"
+      }
+    },
+    "appSettings": {
+      "days": "Tage",
+      "general": "allgemein",
+      "typeDueDays": "Standard-Frist (Tage)",
+      "typeDueDaysHint": "Leer = allgemeine Einstellung (Konfiguration → Fristen), 0 = keine Vorgabe für diesen Typ."
+    },
+    "common": {
+      "actions": "Aktionen",
+      "anyone": "Alle",
+      "deleteConfirm": "Diesen Eintrag löschen?",
+      "new": "Neu"
+    },
+    "fields": {
+      "active": "Aktiv",
+      "key": "Schlüssel",
+      "nameDe": "Name (Deutsch)",
+      "nameEn": "Name (Englisch)",
+      "owner": "Verantwortliche/r",
+      "role": "Rolle",
+      "status": "Status",
+      "team": "Team"
+    },
+    "status": {
+      "open": "Offen",
+      "in_progress": "In Bearbeitung",
+      "waiting_for_approval": "Wartet auf Freigabe",
+      "waiting_for_procurement": "Wartet auf Beschaffung",
+      "waiting_for_delivery": "Wartet auf Lieferung",
+      "converted_to_task": "In Aufgabe umgewandelt",
+      "resolved": "Gelöst",
+      "done": "Erledigt",
+      "closed": "Geschlossen",
+      "cancelled": "Abgebrochen",
+      "active": "In Verwendung",
+      "inactive": "Inaktiv",
+      "decommissioned": "Außer Betrieb",
+      "waiting_for_requester": "Wartet auf Rückmeldung"
+    },
+    "taskTypes": {
+      "blocksParent": "Unteraufgaben dieses Typs blockieren ihre übergeordnete Aufgabe",
+      "blocksParentHint": "Eine Unteraufgabe dieses Typs ist eine Voraussetzung: Die übergeordnete Aufgabe gilt als blockiert, bis sie erledigt ist. Sie bleibt offen und wird wie üblich überfällig. Lässt sich je Unteraufgabe umschalten.",
+      "new": "Neuer Aufgabentyp",
+      "steps": "Schritte",
+      "route": "Ablauf",
+      "hint": "Ein Ablauf ist eine geordnete Liste von Schritten. Jeder Schritt legt fest, wer ihn bearbeitet und welche Aktionen wohin führen.",
+      "routeHint": "Eine neue Aufgabe startet im ersten Schritt. Eine Aktion führt sie in einen anderen Schritt oder schließt sie ab.",
+      "stepN": "Schritt {{n}}",
+      "roleHint": "Nur Inhaber dieser Rolle dürfen handeln. Leer = alle mit Bearbeitungsrecht.",
+      "actions": "Aktionen (Übergänge)",
+      "actionKey": "Aktions-Schlüssel",
+      "finish": "Aufgabe abschließen",
+      "requiresComment": "Kommentar erforderlich",
+      "addAction": "Aktion hinzufügen",
+      "ownerHint": "Die verantwortliche Person darf diesen Aufgabentyp bearbeiten (mit dem Recht „Eigene Aufgabentypen bearbeiten“), aber nicht löschen, und kann ihn an eine andere Person übergeben.",
+      "hiddenFields": "Felder auf der Aufgabe ausblenden",
+      "hiddenFieldsHint": "Ein ausgeblendetes Feld bietet auch das Formular für neue Aufgaben nicht an. Auf der Aufgabe bleibt ein Feld mit Wert sichtbar. „Geplant für“, Titel, Frist, Priorität und Verantwortliche sind immer da.",
+      "hideable": {
+        "asset": "Anlage",
+        "team": "Team",
+        "work_hours": "Arbeitsstunden",
+        "downtime": "Stillstand",
+        "checklist": "Arbeitsblatt",
+        "costs": "Kosten"
+      },
+      "defaultTeam": "Standard-Team",
+      "defaultTeamHint": "Neue Aufgaben dieses Typs landen bei diesem Team, wenn weder Team noch Person gewählt wird.",
+      "quickLinks": "Erlaubte Unteraufgaben-Typen",
+      "noSubtasks": "Keine: dieser Typ nimmt keine Unteraufgaben",
+      "quickLinksHint": "Nur diese Aufgabentypen lassen sich als Unteraufgabe einer Aufgabe dieses Typs anlegen. Leer heißt: keine Unteraufgaben, die Aufgabe hat dann kein „Unteraufgabe hinzufügen“. Bei bis zu vier Typen zeigt die Aufgabe zusätzlich Knöpfe für einen Klick.",
+      "addStep": "Schritt hinzufügen",
+      "errors": {
+        "noSteps": "Ein Aufgabentyp braucht mindestens einen Schritt.",
+        "duplicateStepKey": "Schritt-Schlüssel müssen eindeutig sein.",
+        "noActions": "Schritt „{{step}}“ braucht mindestens eine Aktion.",
+        "unknownTarget": "Aktion „{{action}}“ von Schritt „{{step}}“ verweist auf einen Schritt, den es nicht gibt.",
+        "stepInUse": "{{count}} laufende Aufgabe(n) stehen in einem Schritt, den du entfernt hast.",
+        "inUse": "Dieser Aufgabentyp wird von Aufgaben verwendet und kann nicht gelöscht werden. Deaktiviere ihn stattdessen.",
+        "unreachable": "Der Schritt „{{step}}“ ist vom ersten Schritt aus nicht erreichbar.",
+        "noWayOut": "Vom Schritt „{{step}}“ führt kein Weg zum Abschluss der Aufgabe.",
+        "purposeDelete": "Dieser Aufgabentyp hat eine Sonderfunktion und kann nicht gelöscht werden. Weise die Sonderfunktion zuerst einem anderen Typ zu.",
+        "decisionNeedsChoice": "Der Entscheidungsschritt „{{step}}“ braucht mindestens zwei Aktionen, zwischen denen man wählt.",
+        "decisionNeedsAssignee": "Beim Entscheidungsschritt „{{step}}“ muss stehen, wer entscheidet: eine Rolle, ein Team, der Vorgesetzte, der Anforderer oder der Aufgabenbesitzer. „Beliebige“ geht hier nicht.",
+        "teamScopeNeedsTeam": "Schritt „{{step}}“: Wähle das Team.",
+        "decisionTaskTeam": "Schritt „{{step}}“: Ein Entscheidungsschritt kann nicht beim Team der Aufgabe liegen, das wählt der Anfragende."
+      },
+      "assigneeKind": "Bearbeitet von",
+      "kindRole": "Einer Rolle",
+      "kindSupervisor": "Vorgesetzten der anfragenden Person",
+      "supervisorLevel": "Ebenen höher",
+      "supervisorLevelHint": "1 = direkter Vorgesetzter, 2 = dessen Vorgesetzter. Endet an der Spitze der Kette.",
+      "fallbackRole": "Falls niemand gefunden wird",
+      "fallbackDefault": "Standardrolle (Admin > Einstellungen)",
+      "actionKind": "Art",
+      "kinds": {
+        "positive": "Positiv",
+        "neutral": "Neutral",
+        "negative": "Negativ"
+      },
+      "labelDe": "Button-Text (de)",
+      "labelEn": "Button-Text (en)",
+      "saved": "Aufgabentyp gespeichert.",
+      "general": "Allgemein",
+      "defaults": "Vorgaben für neue Aufgaben",
+      "internalNote": "Interne Notiz",
+      "internalNoteHint": "Für Admins: wofür die Route da ist und wie sie läuft. Wird Nutzern nicht angezeigt.",
+      "startPage": "Startseite",
+      "showOnStartPage": "Auf der Startseite anzeigen",
+      "showOnStartPageHint": "Dort sehen ihn nur Personen, die diesen Typ starten dürfen (siehe „Wer darf starten“).",
+      "onStartPage": "Startseite",
+      "shortDescription": "Kurzbeschreibung",
+      "shortDescriptionHint": "Ein, zwei Sätze in den Worten derer, die ihn starten: wofür er da ist und was danach passiert.",
+      "keywords": "Suchbegriffe",
+      "keywordsHint": "Wörter, nach denen Leute suchen könnten und die nicht im Namen stehen, in beiden Sprachen (z. B. Handschuhe PSA gloves PPE).",
+      "whoCanStart": "Wer darf starten",
+      "everyRole": "Jede Rolle: keine Rolle ist auf bestimmte Aufgabentypen beschränkt.",
+      "notFor": "Nicht für:",
+      "whoCanStartHint": "Wird je Rolle auf der Rollenseite eingestellt (Spalte „Aufgabentypen“). Admins und Nutzer ohne Rolle dürfen immer starten; zusätzlich ist ein Anlege-Recht für Aufgaben nötig.",
+      "kindTeam": "Einem Team",
+      "kindTaskOwner": "Der zugewiesenen Person der Aufgabe",
+      "kindRequester": "Der anfragenden Person",
+      "fallbackRoleHints": {
+        "requester_supervisor": "Rolle, die entscheidet, wenn die anfragende Person keine vorgesetzte Person (mit Login) hat. Leer = nur Admins.",
+        "requester": "Rolle, die den Schritt bekommt, wenn die anfragende Person sich nicht anmelden kann (z. B. Aufgabe aus einer Serie). Leer = nur Admins.",
+        "task_owner": "Ohne zugewiesene Person geht der Schritt an das Team der Aufgabe; ohne beides an diese Rolle. Leer = nur Admins.",
+        "role_in_team": "Rolle, die den Schritt bekommt, wenn im Team niemand die Rolle hat (oder die Aufgabe kein Team hat). Leer = Standardrolle (Einstellungen).",
+        "task_team": "Ohne Team an der Aufgabe geht der Schritt an diese Rolle. Leer = Standardrolle (Einstellungen)."
+      },
+      "itemMode": "Artikel",
+      "itemModes": {
+        "none": "Keine Artikel",
+        "use": "Brauchen und verbrauchen",
+        "order": "Bestellen",
+        "noneHint": "Aufgaben dieses Typs haben nichts mit Artikeln zu tun.",
+        "useHint": "Aufgaben listen die Artikel, die sie brauchen oder verbraucht haben, bestellen fehlende über eine Beschaffungsanfrage und fragen beim Abschließen nach. Für Instandhaltung und Prüfungen.",
+        "orderHint": "Aufgaben bestellen Artikel: ihre eigenen Zeilen und die der Aufgabe, aus der sie gestartet wurden. Mit Kopieransicht fürs ERP. Für Beschaffungsanfragen."
+      },
+      "itemCategories": "Angebotene Kategorien",
+      "itemCategoriesHint": "Nur Artikel dieser Kategorien lassen sich an Aufgaben dieses Typs hängen. Leer = alle.",
+      "allCategories": "Alle Kategorien",
+      "hooks": "Sonderfunktionen",
+      "hooksHint": "Funktionen, die im selben Moment wie der Schrittwechsel laufen, z. B. eine Entscheidung zurückschreiben. Ohne Eintrag leitet der Schritt nur weiter.",
+      "hook": "Funktion",
+      "hookEvent": "Wann",
+      "addHook": "Sonderfunktion hinzufügen",
+      "hookEvents": {
+        "enter": "Die Aufgabe kommt in diesen Schritt",
+        "action": "In diesem Schritt wird eine Aktion ausgeführt (weiter oder abschließen)",
+        "leave": "Die Aufgabe verlässt diesen Schritt",
+        "done": "Die Aufgabe wird aus diesem Schritt abgeschlossen",
+        "cancelled": "Die Aufgabe wird in diesem Schritt abgebrochen"
+      },
+      "typeHooks": "Sonderfunktionen des ganzen Typs",
+      "typeHooksHint": "Laufen für jeden Schritt dieses Typs, z. B. was mit dem Ticket geschieht, aus dem eine Aufgabe entstand. Ein Bestelltyp bekommt die Bestellfunktionen immer.",
+      "purpose": "Sonderfunktion",
+      "purposeHint": "Dieser Typ erfüllt eine Sonderfunktion des Programms (zum Beispiel Urlaub). Die Route bleibt frei, die nötigen Sonderfunktionen der Schritte müssen aber enthalten sein. Pro Funktion gibt es einen Typ.",
+      "purposeProblems": "Der Route fehlen Sonderfunktionen, die diese Funktion braucht: {{functions}}. Bis sie ergänzt sind, funktioniert sie nicht.",
+      "purposes": {
+        "leave": "Abwesenheit"
+      },
+      "trackAsRequest": "In „Meine Anfragen“",
+      "trackAsRequestHint": "Aufgaben dieses Typs erscheinen bei der Person, die sie gestellt hat, unter „Zur Entscheidung“ > „Meine Anfragen“. Sinnvoll für Typen mit einer Freigabe irgendwo im Ablauf.",
+      "whoWorks": "Wer bearbeitet den Schritt",
+      "decisionStep": "Entscheidungsschritt",
+      "noDecisionStep": "Normaler Schritt",
+      "decisionStepHint": "Eine Person wählt zwischen den Aktionen dieses Schritts (zum Beispiel Genehmigen oder Ablehnen, Variante A oder B). Die Aufgabe erscheint dann bei wem der Schritt wartet unter „Zur Entscheidung“, und der Typ kann in „Meine Anfragen“ auftauchen.",
+      "unnamedStep": "(ohne Namen)",
+      "routeOverview": "Ablauf im Überblick",
+      "actionGoesTo": "Führt zu",
+      "teamScope": "Nur Mitglieder von",
+      "teamScopeNone": "Alle mit dieser Rolle",
+      "teamScopeHint": "Beschränkt den Schritt auf die Inhaber der Rolle, die Mitglied dieses Teams sind. Findet sich niemand: die Ausweichrolle. Bei einem Entscheidungsschritt zählen nur Teams, die nicht von Benutzern angelegt wurden, und nicht das Team der Aufgabe.",
+      "teamScopes": {
+        "task_team": "dem Team der Aufgabe",
+        "requester_team": "einem Team des Anfragenden",
+        "fixed": "einem festen Team"
+      },
+      "stepItems": "Punkte dieses Schritts",
+      "stepItemsHint": "Kommen in das Arbeitsblatt jeder neuen Aufgabe dieses Typs. Ein Pflichtpunkt hält den Schritt: Weiter geht es erst, wenn er beantwortet ist (der Dialog der Aktion fragt danach). Ablehnen und Zurückschicken bleiben möglich.",
+      "kindTaskTeam": "Dem Team der Aufgabe"
+    },
+    "admin": {
+      "roleTaskTypes": "Aufgabentypen",
+      "allTaskTypes": "Alle Aufgabentypen"
+    },
+    "feed": {
+      "events": {
+        "priority_changed": "{{actor}} hat die Priorität von „{{old}}“ auf „{{new}}“ geändert.",
+        "task_created": "{{actor}} hat diese Aufgabe angelegt.",
+        "task_created_subtask": "{{actor}} hat diese Aufgabe als Unteraufgabe angelegt.",
+        "task_subtask_added": "{{actor}} hat die Unteraufgabe #{{number}} {{title}} hinzugefügt.",
+        "task_created_from_ticket": "{{actor}} hat diese Aufgabe aus einem Ticket erstellt.",
+        "task_step_changed": "{{actor}} hat „{{action}}“ gewählt: {{from}} → {{to}}.",
+        "task_step_changed_to": "{{actor}} hat „{{action}}“ gewählt: {{from}} → {{to}} ({{user}}).",
+        "task_completed": "{{actor}} hat die Aufgabe als erledigt markiert.",
+        "task_cancelled": "{{actor}} hat die Aufgabe abgebrochen.",
+        "task_planning_changed": "{{actor}} hat die Aufgabe {{parts}}.",
+        "due_date_changed": "{{actor}} hat die Fälligkeit auf {{date}} gesetzt.",
+        "task_created_recurring": "Eine wiederkehrende Regel hat diese Aufgabe angelegt.",
+        "title_changed": "{{actor}} hat die Aufgabe von „{{old}}“ in „{{new}}“ umbenannt.",
+        "task_forwarded": "{{actor}} hat die Aufgabe an {{user}} weitergeleitet.",
+        "task_forwarded_step": "{{actor}} hat den Schritt {{step}} an {{user}} weitergeleitet.",
+        "task_forwarded_taken": "{{actor}} hat den Schritt {{step}} übernommen.",
+        "task_claimed": "{{actor}} hat die Aufgabe übernommen.",
+        "task_reopened": "{{actor}} hat die Aufgabe wieder geöffnet.{{comment}}"
+      }
+    },
+    "priority": {
+      "high": "Hoch",
+      "low": "Niedrig",
+      "normal": "Normal",
+      "urgent": "Dringend"
+    },
+    "due": {
+      "today": "heute",
+      "tomorrow": "morgen",
+      "inDays_one": "in {{count}} Tag",
+      "inDays_other": "in {{count}} Tagen",
+      "overdue_one": "{{count}} Tag überfällig",
+      "overdue_other": "{{count}} Tage überfällig"
+    },
+    "permissions": {
+      "literals": {
+        "tasks": {
+          "view": {
+            "assigned": "Aufgaben ansehen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Aufgaben ansehen",
+            "team": "Aufgaben ansehen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Aufgaben an Anlagen, für die mein Team zuständig ist ansehen",
+            "all": "Alle Aufgaben ansehen"
+          },
+          "check": {
+            "assigned": "Aufgaben abhaken, kommentieren und Dateien anhängen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Aufgaben abhaken, kommentieren und Dateien anhängen",
+            "team": "Aufgaben abhaken, kommentieren und Dateien anhängen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Aufgaben an Anlagen, für die mein Team zuständig ist abhaken, kommentieren und Dateien anhängen",
+            "all": "Alle Aufgaben abhaken, kommentieren und Dateien anhängen"
+          },
+          "edit": {
+            "assigned": "Aufgaben ändern, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Aufgaben ändern",
+            "team": "Aufgaben ändern, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Aufgaben an Anlagen, für die mein Team zuständig ist ändern",
+            "all": "Alle Aufgaben ändern"
+          },
+          "create": {
+            "created": "Aufgaben als Ersteller anlegen",
+            "team": "Aufgaben für meine Teams anlegen",
+            "assigned_assets": "Aufgaben an Anlagen, für die mein Team zuständig ist anlegen",
+            "all": "Aufgaben anlegen"
+          },
+          "delete": {
+            "assigned": "Aufgaben löschen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Aufgaben löschen",
+            "team": "Aufgaben löschen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Aufgaben an Anlagen, für die mein Team zuständig ist löschen",
+            "all": "Alle Aufgaben löschen"
+          }
+        },
+        "initiatives": {
+          "view": {
+            "assigned": "Initiativen ansehen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Initiativen ansehen",
+            "team": "Initiativen ansehen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Initiativen an Anlagen, für die mein Team zuständig ist ansehen",
+            "all": "Alle Initiativen ansehen"
+          },
+          "check": {
+            "assigned": "Initiativen abhaken, kommentieren und Dateien anhängen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Initiativen abhaken, kommentieren und Dateien anhängen",
+            "team": "Initiativen abhaken, kommentieren und Dateien anhängen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Initiativen an Anlagen, für die mein Team zuständig ist abhaken, kommentieren und Dateien anhängen",
+            "all": "Alle Initiativen abhaken, kommentieren und Dateien anhängen"
+          },
+          "edit": {
+            "assigned": "Initiativen ändern, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Initiativen ändern",
+            "team": "Initiativen ändern, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Initiativen an Anlagen, für die mein Team zuständig ist ändern",
+            "all": "Alle Initiativen ändern"
+          },
+          "create": {
+            "created": "Initiativen als Ersteller anlegen",
+            "team": "Initiativen für meine Teams anlegen",
+            "assigned_assets": "Initiativen an Anlagen, für die mein Team zuständig ist anlegen",
+            "all": "Initiativen anlegen"
+          },
+          "delete": {
+            "assigned": "Initiativen löschen, die mir zugewiesen sind oder deren aktueller Schritt bei mir liegt",
+            "created": "Von mir angelegte Initiativen löschen",
+            "team": "Initiativen löschen, die einem meiner Teams zugewiesen sind oder deren aktueller Schritt bei einem meiner Teams liegt",
+            "assigned_assets": "Initiativen an Anlagen, für die mein Team zuständig ist löschen",
+            "all": "Alle Initiativen löschen"
+          }
+        },
+        "task_types": {
+          "edit": {
+            "own": "Eigene Aufgabentypen bearbeiten",
+            "all": "Alle Aufgabentypen bearbeiten"
+          }
+        }
+      }
+    },
+    "entities": {
+      "tasks": "Aufgaben",
+      "initiatives": "Initiativen",
+      "task_types": "Aufgabentypen"
+    }
+  }
+}

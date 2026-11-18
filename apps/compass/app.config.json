@@ -1,0 +1,1 @@
+{"name": "COMPASS", "modules": ["messaging", "tasks", "task-family", "workflows", "assets", "tickets", "items", "people", "leave", "home", "help"]}

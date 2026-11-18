@@ -1,0 +1,72 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "vessels": {
+          "edit": "Edit vessels (edit notes and attachments of vessels)",
+          "create": "Create vessels",
+          "delete": "Delete vessels"
+        },
+        "hull_events": {
+          "view": {
+            "assigned": "View hull events assigned to me",
+            "team": "View hull events of my teams",
+            "account": "View hull events of the companies I am account owner of (and their group companies)",
+            "all": "View all hull events"
+          },
+          "edit": {
+            "assigned": "Edit hull events assigned to me",
+            "team": "Edit hull events of my teams",
+            "account": "Edit hull events of the companies I am account owner of (and their group companies)",
+            "all": "Edit all hull events"
+          },
+          "create": {
+            "assigned": "Create hull events assigned to me",
+            "team": "Create hull events of my teams",
+            "all": "Create all hull events"
+          },
+          "delete": {
+            "assigned": "Delete hull events assigned to me",
+            "team": "Delete hull events of my teams",
+            "all": "Delete all hull events"
+          },
+          "approve": {
+            "assigned": "Approve hull events assigned to me",
+            "team": "Approve hull events of my teams",
+            "all": "Approve all hull events"
+          }
+        },
+        "newbuildings": {
+          "view": {
+            "assigned": "View newbuilding projects assigned to me",
+            "team": "View newbuilding projects of my teams",
+            "account": "View newbuilding projects whose customer, shipyard or owner associate I am account owner of (and their group companies)",
+            "all": "View all newbuilding projects"
+          },
+          "edit": {
+            "assigned": "Edit newbuilding projects assigned to me",
+            "team": "Edit newbuilding projects of my teams",
+            "account": "Edit newbuilding projects whose customer, shipyard or owner associate I am account owner of (and their group companies)",
+            "all": "Edit all newbuilding projects"
+          },
+          "create": {
+            "assigned": "Create newbuilding projects assigned to me",
+            "team": "Create newbuilding projects of my teams",
+            "all": "Create all newbuilding projects"
+          },
+          "delete": {
+            "assigned": "Delete newbuilding projects assigned to me",
+            "team": "Delete newbuilding projects of my teams",
+            "all": "Delete all newbuilding projects"
+          }
+        }
+      }
+    },
+    "entities": {
+      "vessels": "Vessels",
+      "hull_events": "Hull events",
+      "newbuildings": "Newbuilding projects"
+    }
+  },
+  "de": {}
+}

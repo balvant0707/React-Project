@@ -1,0 +1,52 @@
+# Mirrors `main` to a second, private repository so that COMPASS gets its own Cloudflare Pages project
+# (a Pages project is tied to one repository, docs/deploy.md). The mirror is read-only by convention: nobody commits there,
+# every push to `main` here replaces its `main` (force push). Pages builds the mirror with the settings of docs/deploy.md.
+#
+# Setup (once):
+#   1. Create the private mirror repository (empty, no README).
+#   2. ssh-keygen -t ed25519 -N '' -C rbp-compass-mirror -f mirror_key
+#      Mirror repo > Settings > Deploy keys > add mirror_key.pub, tick "Allow write access".
+#   3. This repo > Settings > Secrets and variables > Actions:
+#        secret   COMPASS_MIRROR_DEPLOY_KEY = the content of mirror_key (the private key); then delete the key files
+#        variable COMPASS_MIRROR_REPO       = owner/name of the mirror repository
+#   4. Cloudflare Pages: connect the COMPASS project to the mirror repository.
+# Without the variable and the secret the job does nothing (it also does nothing in the mirror itself, which holds this file).
+name: mirror-compass
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: mirror-compass
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    env:
+      MIRROR_REPO: ${{ vars.COMPASS_MIRROR_REPO }}
+      MIRROR_KEY: ${{ secrets.COMPASS_MIRROR_DEPLOY_KEY }}
+    steps:
+      - name: Skip when not configured, or when this is the mirror itself
+        id: gate
+        run: |
+          if [ -z "$MIRROR_REPO" ] || [ -z "$MIRROR_KEY" ] || [ "$MIRROR_REPO" = "$GITHUB_REPOSITORY" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"; echo "mirror not configured here: nothing to do"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          fetch-depth: 0
+      - name: Push main to the mirror
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$MIRROR_KEY" > ~/.ssh/mirror_key
+          chmod 600 ~/.ssh/mirror_key
+          ssh-keyscan -t ed25519,rsa github.com >> ~/.ssh/known_hosts 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/mirror_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes"
+          git push --force "git@github.com:${MIRROR_REPO}.git" "${GITHUB_SHA}:refs/heads/main"
+          rm -f ~/.ssh/mirror_key

@@ -1,0 +1,39 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "companies": {
+          "edit": "Edit companies",
+          "create": "Create companies",
+          "delete": {
+            "created": "Delete companies I created",
+            "all": "Delete any company (not SeaWeb companies)"
+          },
+          "read_notes": {
+            "team": "Read the notes and files of companies whose salesperson is me or shares a team with me",
+            "all": "Read the notes and files of all companies"
+          },
+          "write_notes": {
+            "team": "Write notes and add files on companies whose salesperson is me or shares a team with me",
+            "all": "Write notes and add files on all companies"
+          }
+        }
+      }
+    },
+    "entities": {
+      "companies": "Companies"
+    },
+    "admin": {
+      "teamUse": {
+        "owner_associate": "Owner Associate"
+      }
+    }
+  },
+  "de": {
+    "admin": {
+      "teamUse": {
+        "owner_associate": "Owner Associate"
+      }
+    }
+  }
+}

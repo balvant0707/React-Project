@@ -1,0 +1,28 @@
+{
+  "en": {
+    "help": {
+      "title": "Help",
+      "contextHelp": "Help for this page",
+      "searchPlaceholder": "Search help …",
+      "searchResults_one": "{{count}} result",
+      "searchResults_other": "{{count}} results",
+      "noResults": "No help text matches. Try another word.",
+      "onThisPage": "On this page",
+      "openManual": "Open in manual",
+      "allTopics": "All topics"
+    }
+  },
+  "de": {
+    "help": {
+      "title": "Hilfe",
+      "contextHelp": "Hilfe zu dieser Seite",
+      "searchPlaceholder": "Hilfe durchsuchen …",
+      "searchResults_one": "{{count}} Treffer",
+      "searchResults_other": "{{count}} Treffer",
+      "noResults": "Dazu gibt es keinen Hilfetext. Versuche ein anderes Wort.",
+      "onThisPage": "Auf dieser Seite",
+      "openManual": "Im Handbuch öffnen",
+      "allTopics": "Alle Themen"
+    }
+  }
+}

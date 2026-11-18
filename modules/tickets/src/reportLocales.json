@@ -1,0 +1,68 @@
+{
+  "en": {
+    "report": {
+      "addPhoto": "Take or add photo",
+      "another": "Send another report",
+      "assetUnknownOffline": "No connection: the machine name cannot be shown. You can still send the report; it is saved and sent when you are online.",
+      "contact": "Phone or email",
+      "details": "Details (optional)",
+      "errors": {
+        "generic": "The report could not be sent. Please try again.",
+        "photo_too_large": "The photo is larger than 5 MB.",
+        "photo_type": "Only image files are allowed.",
+        "title_required": "Please describe the problem."
+      },
+      "notFound": "This code is not valid.",
+      "notFoundHint": "The sticker may be outdated. Please tell the workshop.",
+      "optionalContact": "If you want to be contacted (optional):",
+      "pageTitle": "Report a problem",
+      "photo": "Photo (optional)",
+      "rateLimited": "Too many reports from this device. Please try again later.",
+      "sent": "Thank you, your report was sent.",
+      "sentNumber": "Ticket number: {{number}}",
+      "submit": "Send report",
+      "title": "Report a problem",
+      "titlePlaceholder": "e.g. Machine stops after a few minutes",
+      "whatsWrong": "What is wrong?",
+      "yourName": "Your name"
+    },
+    "offline": {
+      "queued": "No connection. The report is saved on this device and will be sent automatically as soon as you are online.",
+      "queuedTitle": "Report saved",
+      "sentLater": "Your saved report was sent."
+    }
+  },
+  "de": {
+    "report": {
+      "addPhoto": "Foto aufnehmen oder hinzufügen",
+      "another": "Weitere Meldung senden",
+      "assetUnknownOffline": "Keine Verbindung: der Maschinenname kann nicht angezeigt werden. Du kannst die Meldung trotzdem absenden; sie wird gespeichert und bei Verbindung gesendet.",
+      "contact": "Telefon oder E-Mail",
+      "details": "Details (optional)",
+      "errors": {
+        "generic": "Die Meldung konnte nicht gesendet werden. Bitte erneut versuchen.",
+        "photo_too_large": "Das Foto ist größer als 5 MB.",
+        "photo_type": "Nur Bilddateien sind erlaubt.",
+        "title_required": "Bitte beschreibe das Problem."
+      },
+      "notFound": "Dieser Code ist ungültig.",
+      "notFoundHint": "Der Aufkleber ist möglicherweise veraltet. Bitte sag der Werkstatt Bescheid.",
+      "optionalContact": "Wenn du zurückgerufen werden möchtest (optional):",
+      "pageTitle": "Problem melden",
+      "photo": "Foto (optional)",
+      "rateLimited": "Zu viele Meldungen von diesem Gerät. Bitte später erneut versuchen.",
+      "sent": "Danke, deine Meldung wurde gesendet.",
+      "sentNumber": "Ticketnummer: {{number}}",
+      "submit": "Meldung senden",
+      "title": "Problem melden",
+      "titlePlaceholder": "z. B. Maschine stoppt nach wenigen Minuten",
+      "whatsWrong": "Was ist los?",
+      "yourName": "Dein Name"
+    },
+    "offline": {
+      "queued": "Keine Verbindung. Die Meldung ist auf diesem Gerät gespeichert und wird automatisch gesendet, sobald du wieder online bist.",
+      "queuedTitle": "Meldung gespeichert",
+      "sentLater": "Deine gespeicherte Meldung wurde gesendet."
+    }
+  }
+}

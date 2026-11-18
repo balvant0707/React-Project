@@ -1,0 +1,17 @@
+{
+  "en": {
+    "permissions": {
+      "literals": {
+        "products": {
+          "edit": "Edit products, packagings and cost prices",
+          "create": "Create products",
+          "delete": "Delete products"
+        }
+      }
+    },
+    "entities": {
+      "products": "Products"
+    }
+  },
+  "de": {}
+}

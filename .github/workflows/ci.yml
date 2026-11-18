@@ -1,0 +1,40 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run test:core
+      - run: npm run test:functions
+      - run: npm run build
+      # Known advisory (path-to-regexp via @refinedev/antd, client-side route matching only): reported, not blocking, until
+      # @refinedev/antd 6 is adopted. Make it blocking by removing continue-on-error.
+      - run: npm audit --omit=dev --audit-level=high
+        continue-on-error: true
+
+  # The RLS / MFA / grant tests of every module against a local Supabase stack, once per app.
+  sql:
+    runs-on: ubuntu-latest
+    # First run of this job: not yet proven on GitHub's runners. Remove continue-on-error once it is green.
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [compass, npm]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 24, cache: npm }
+      - run: npm ci
+      - run: npm run compose
+      - uses: supabase/setup-cli@v1
+        with: { version: latest }
+      - run: supabase start
+        working-directory: apps/${{ matrix.app }}
+      - run: npm run test:sql -- ${{ matrix.app }}

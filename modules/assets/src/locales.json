@@ -1,0 +1,366 @@
+{
+  "en": {
+    "appSettings": {
+      "defaultAssetTaskType": "Default type for work on an asset",
+      "defaultAssetTaskTypeHint": "Preselected in the series form and when a ticket with an asset becomes a task. A type chosen here cannot be deleted."
+    },
+    "assetAttributes": {
+      "assetTypes": "Asset types",
+      "assetTypesHint": "Assets of these types show the attribute in their form.",
+      "dataType": "Data type",
+      "deleteUsed": "Delete this attribute? {{count}} values on assets will be lost.",
+      "listHint": "Self-learning: free text; typing suggests the values already in use.",
+      "typeInUse": "The attribute already has values; its data type can no longer change (only text ↔ choice list).",
+      "types": {
+        "text": "Text",
+        "number": "Number",
+        "date": "Date",
+        "boolean": "Yes/No",
+        "list": "Choice list"
+      },
+      "unit": "Unit",
+      "usage": "In use"
+    },
+    "assets": {
+      "allAssets": "All assets",
+      "allTime": "All time",
+      "avgOpenAge": "Avg. age of open tickets",
+      "avgResolve": "Avg. time to resolve",
+      "below": "Below",
+      "childCount_one": "{{count}} sub-asset",
+      "childCount_other": "{{count}} sub-assets",
+      "children": "Below this asset",
+      "columns": {
+        "path": "Path",
+        "type": "Type",
+        "status": "Status",
+        "tickets": "Open tickets",
+        "manufacturer": "Manufacturer",
+        "serialNumber": "Serial number",
+        "location": "Location",
+        "responsible": "Responsible"
+      },
+      "completedAt": "Completed",
+      "copyLink": "Copy link",
+      "deleteBlocked": "This asset still has child assets, tickets or tasks and cannot be deleted.",
+      "deleteConfirm": "Delete this asset?",
+      "documents": "Documents",
+      "dropDocuments": "Drop files here or click to upload",
+      "edit": "Edit asset",
+      "equipmentOnly": "Equipment only",
+      "filterAll": "All",
+      "filterClosed": "Closed",
+      "filterOpen": "Open",
+      "flowTitle": "Tickets per month",
+      "flowTooltip": "{{opened}} opened, {{resolved}} resolved",
+      "labelsAll": "All",
+      "labelsHint": "Printable QR stickers. Scanning one opens the public report form.",
+      "labelsNone": "None",
+      "labelsPicked": "{{count}} of {{total}} selected",
+      "listHint": "Assets as a tree that folds open, or as a flat list, with the same columns and filters. Rights granted on a node cover everything below it.",
+      "maintenanceTitle": "Maintenance",
+      "new": "New asset",
+      "newChild": "New child asset",
+      "nextDue": "Next due",
+      "noDocuments": "No documents yet.",
+      "noDueDate": "no date",
+      "noParent": "No parent (top level)",
+      "noTasks": "No tasks",
+      "noTeam": "No team assigned.",
+      "noTickets": "No tickets",
+      "openTaskCount_one": "{{count}} open task",
+      "openTaskCount_other": "{{count}} open tasks",
+      "openTasks": "Open tasks",
+      "openTickets": "Open tickets",
+      "opened": "Opened",
+      "overdueTasks": "Overdue tasks",
+      "parent": "Parent",
+      "printLabel": "Print label",
+      "printLabels": "Print labels",
+      "printOnlyThis": "Only this asset",
+      "printWithChildren": "This one and everything below",
+      "punctualityTitle": "Maintenance punctuality",
+      "qrCode": "QR code",
+      "qrHint": "Opens the report form without login.",
+      "resolved": "Resolved",
+      "scanToReport": "Scan to report a problem",
+      "statsScopeHint": "Includes everything below this asset in the tree.",
+      "tabActivity": "Activity/Chat",
+      "tabDetails": "Details",
+      "tabDocuments": "Attachments",
+      "tabParts": "Spare parts",
+      "tabSeries": "Series",
+      "tabStatistics": "Statistics",
+      "tabTasks": "Tasks",
+      "tabTickets": "Tickets",
+      "task": "Task",
+      "team": "Responsible team",
+      "teamFrom": "from {{name}}",
+      "teamHint": "The team is responsible for this asset and everything below it. What its members may do there comes from their own roles. Teams higher up the tree stay responsible.",
+      "teamNone": "No team",
+      "technicalData": "Technical data",
+      "ticketsTitle": "Tickets",
+      "viewList": "List",
+      "viewTree": "Tree",
+      "withOpenTasks": "With open tasks"
+    },
+    "configuration": {
+      "asset_attributes": {
+        "description": "Technical data per asset type: text, number, date, yes/no or choice list.",
+        "title": "Attributes"
+      },
+      "asset_types": {
+        "description": "Types that label the asset tree.",
+        "isGrouping": "Grouping node",
+        "isGroupingHint": "Only structures the tree (e.g. site, category). The asset list hides such assets by default.",
+        "title": "Asset types"
+      }
+    },
+    "documentTypes": {
+      "forNew": "Document type for new files",
+      "untagged": "No type"
+    },
+    "feed": {
+      "events": {
+        "asset_changed": "{{actor}} linked the task to {{asset}}.",
+        "asset_created": "{{actor}} created this asset.",
+        "asset_moved": "{{actor}} moved the asset below {{parent}}.",
+        "asset_operating_hours_changed": "{{actor}} set the operating hours to {{new}} h.",
+        "asset_responsible_changed": "{{actor}} set {{user}} as responsible.",
+        "status_changed": "{{actor}} changed the status from {{old}} to {{new}}."
+      }
+    },
+    "looks": {
+      "assetIconHint": "Also holds for everything below it until a node has its own icon. Empty = taken from the node above, else from the asset type.",
+      "assetTypeIconHint": "Shown in the tree and in the lists. Assets are told apart by the shape, not by a colour.",
+      "inheritedIcon": "Inherited"
+    },
+    "offline": {
+      "available": "Available offline",
+      "hint": "Saves this asset's documents and the photos of its spare parts list on this device. Pages you opened before stay readable without reception.",
+      "makeAvailable": "Available offline",
+      "needsConnection": "Needs a connection to download the documents.",
+      "saved": "Documents saved on this device.",
+      "someFilesFailed": "{{count}} document(s) could not be saved."
+    },
+    "operatingInstructions": {
+      "tab": "Operating instructions"
+    },
+    "statistics": {
+      "last12": "Last 12 months",
+      "thisYear": "This year"
+    },
+    "permissions": {
+      "literals": {
+        "assets": {
+          "view": {
+            "assigned_assets": "See assets my team is responsible for",
+            "all": "See all assets"
+          },
+          "edit": {
+            "assigned_assets": "Edit assets my team is responsible for",
+            "all": "Edit all assets"
+          },
+          "create": {
+            "assigned_assets": "Create assets my team is responsible for",
+            "all": "Create assets"
+          },
+          "delete": {
+            "assigned_assets": "Delete assets my team is responsible for",
+            "all": "Delete all assets"
+          }
+        }
+      }
+    },
+    "entities": {
+      "assets": "Assets"
+    },
+    "admin": {
+      "teamUse": {
+        "assets": "Assets"
+      }
+    }
+  },
+  "de": {
+    "appSettings": {
+      "defaultAssetTaskType": "Standardtyp für Arbeit an einem Asset",
+      "defaultAssetTaskTypeHint": "Wird im Serienformular vorausgewählt und wenn aus einer Meldung mit Asset eine Aufgabe wird. Ein hier gewählter Typ lässt sich nicht löschen."
+    },
+    "assetAttributes": {
+      "assetTypes": "Anlagentypen",
+      "assetTypesHint": "Anlagen dieser Typen zeigen das Merkmal im Formular.",
+      "dataType": "Datentyp",
+      "deleteUsed": "Dieses Merkmal löschen? {{count}} Werte an Anlagen gehen verloren.",
+      "listHint": "Selbstlernend: Freitext, beim Tippen werden die schon verwendeten Werte vorgeschlagen.",
+      "typeInUse": "Das Merkmal hat schon Werte, der Datentyp kann nicht mehr geändert werden (nur Text ↔ Auswahlliste).",
+      "types": {
+        "text": "Text",
+        "number": "Zahl",
+        "date": "Datum",
+        "boolean": "Ja/Nein",
+        "list": "Auswahlliste"
+      },
+      "unit": "Einheit",
+      "usage": "Verwendet"
+    },
+    "assets": {
+      "allAssets": "Alle Anlagen",
+      "allTime": "Gesamt",
+      "avgOpenAge": "Ø Alter offener Tickets",
+      "avgResolve": "Ø Zeit bis zur Lösung",
+      "below": "Unterhalb von",
+      "childCount_one": "{{count}} Unteranlage",
+      "childCount_other": "{{count}} Unteranlagen",
+      "children": "Unterhalb dieser Anlage",
+      "columns": {
+        "path": "Pfad",
+        "type": "Typ",
+        "status": "Status",
+        "tickets": "Offene Tickets",
+        "manufacturer": "Hersteller",
+        "serialNumber": "Seriennummer",
+        "location": "Standort",
+        "responsible": "Verantwortlich"
+      },
+      "completedAt": "Erledigt",
+      "copyLink": "Link kopieren",
+      "deleteBlocked": "Diese Anlage hat noch untergeordnete Anlagen, Tickets oder Aufgaben und kann nicht gelöscht werden.",
+      "deleteConfirm": "Diese Anlage löschen?",
+      "documents": "Dokumente",
+      "dropDocuments": "Dateien hierher ziehen oder klicken",
+      "edit": "Anlage bearbeiten",
+      "equipmentOnly": "Nur Geräte",
+      "filterAll": "Alle",
+      "filterClosed": "Abgeschlossen",
+      "filterOpen": "Offen",
+      "flowTitle": "Tickets pro Monat",
+      "flowTooltip": "{{opened}} eröffnet, {{resolved}} gelöst",
+      "labelsAll": "Alle",
+      "labelsHint": "Druckbare QR-Aufkleber. Der Scan öffnet das öffentliche Meldeformular.",
+      "labelsNone": "Keine",
+      "labelsPicked": "{{count}} von {{total}} gewählt",
+      "listHint": "Anlagen als Baum zum Auf- und Zuklappen oder als flache Liste, mit denselben Spalten und Filtern. Rechte auf einem Knoten gelten für alles darunter.",
+      "maintenanceTitle": "Wartung",
+      "new": "Neue Anlage",
+      "newChild": "Neue untergeordnete Anlage",
+      "nextDue": "Nächste Fälligkeit",
+      "noDocuments": "Noch keine Dokumente.",
+      "noDueDate": "ohne Termin",
+      "noParent": "Kein Elternknoten (oberste Ebene)",
+      "noTasks": "Keine Aufgaben",
+      "noTeam": "Kein Team zugeordnet.",
+      "noTickets": "Keine Tickets",
+      "openTaskCount_one": "{{count}} offene Aufgabe",
+      "openTaskCount_other": "{{count}} offene Aufgaben",
+      "openTasks": "Offene Aufgaben",
+      "openTickets": "Offene Tickets",
+      "opened": "Eröffnet",
+      "overdueTasks": "Überfällige Aufgaben",
+      "parent": "Übergeordnet",
+      "printLabel": "Etikett drucken",
+      "printLabels": "Etiketten drucken",
+      "printOnlyThis": "Nur diese Anlage",
+      "printWithChildren": "Diese und alle darunter",
+      "punctualityTitle": "Pünktlichkeit der Wartung",
+      "qrCode": "QR-Code",
+      "qrHint": "Öffnet das Meldeformular ohne Anmeldung.",
+      "resolved": "Gelöst",
+      "scanToReport": "Scannen, um ein Problem zu melden",
+      "statsScopeHint": "Enthält alles unterhalb dieser Anlage im Baum.",
+      "tabActivity": "Aktivität/Chat",
+      "tabDetails": "Details",
+      "tabDocuments": "Dokumente",
+      "tabParts": "Ersatzteile",
+      "tabSeries": "Serien",
+      "tabStatistics": "Statistik",
+      "tabTasks": "Aufgaben",
+      "tabTickets": "Tickets",
+      "task": "Aufgabe",
+      "team": "Zuständiges Team",
+      "teamFrom": "von {{name}}",
+      "teamHint": "Das Team ist für diese Anlage und alles darunter zuständig. Was seine Mitglieder dort tun dürfen, bestimmen ihre eigenen Rollen. Teams weiter oben im Baum bleiben zuständig.",
+      "teamNone": "Kein Team",
+      "technicalData": "Technische Daten",
+      "ticketsTitle": "Tickets",
+      "viewList": "Liste",
+      "viewTree": "Baum",
+      "withOpenTasks": "Mit offenen Aufgaben"
+    },
+    "configuration": {
+      "asset_attributes": {
+        "description": "Technische Daten pro Anlagentyp: Text, Zahl, Datum, Ja/Nein oder Auswahlliste.",
+        "title": "Merkmale"
+      },
+      "asset_types": {
+        "description": "Typen, die den Anlagenbaum beschriften.",
+        "isGrouping": "Gruppierungsknoten",
+        "isGroupingHint": "Nur zur Gliederung des Baums (z. B. Werk, Kategorie). Die Anlagenliste blendet solche Anlagen standardmäßig aus.",
+        "title": "Anlagentypen"
+      }
+    },
+    "documentTypes": {
+      "forNew": "Dokumenttyp für neue Dateien",
+      "untagged": "Kein Typ"
+    },
+    "feed": {
+      "events": {
+        "asset_changed": "{{actor}} hat die Aufgabe mit {{asset}} verknüpft.",
+        "asset_created": "{{actor}} hat diese Anlage angelegt.",
+        "asset_moved": "{{actor}} hat die Anlage unter {{parent}} verschoben.",
+        "asset_operating_hours_changed": "{{actor}} hat die Betriebsstunden auf {{new}} h gesetzt.",
+        "asset_responsible_changed": "{{actor}} hat {{user}} als verantwortlich eingetragen.",
+        "status_changed": "{{actor}} hat den Status von „{{old}}“ auf „{{new}}“ geändert."
+      }
+    },
+    "looks": {
+      "assetIconHint": "Gilt auch für alles darunter, bis ein Knoten ein eigenes Symbol hat. Leer = vom übergeordneten Knoten übernommen, sonst vom Anlagentyp.",
+      "assetTypeIconHint": "Erscheint im Baum und in den Listen. Assets werden an der Form unterschieden, nicht an einer Farbe.",
+      "inheritedIcon": "Übernommen"
+    },
+    "offline": {
+      "available": "Offline verfügbar",
+      "hint": "Speichert die Dokumente dieser Anlage und die Fotos ihrer Ersatzteilliste auf diesem Gerät. Bereits geöffnete Seiten bleiben ohne Empfang lesbar.",
+      "makeAvailable": "Offline verfügbar machen",
+      "needsConnection": "Zum Herunterladen der Dokumente ist eine Verbindung nötig.",
+      "saved": "Dokumente auf diesem Gerät gespeichert.",
+      "someFilesFailed": "{{count}} Dokument(e) konnten nicht gespeichert werden."
+    },
+    "operatingInstructions": {
+      "tab": "Betriebsanweisungen"
+    },
+    "statistics": {
+      "last12": "Letzte 12 Monate",
+      "thisYear": "Dieses Jahr"
+    },
+    "permissions": {
+      "literals": {
+        "assets": {
+          "view": {
+            "assigned_assets": "Anlagen, für die mein Team zuständig ist ansehen",
+            "all": "Alle Anlagen ansehen"
+          },
+          "edit": {
+            "assigned_assets": "Anlagen, für die mein Team zuständig ist ändern",
+            "all": "Alle Anlagen ändern"
+          },
+          "create": {
+            "assigned_assets": "Anlagen, für die mein Team zuständig ist anlegen",
+            "all": "Anlagen anlegen"
+          },
+          "delete": {
+            "assigned_assets": "Anlagen, für die mein Team zuständig ist löschen",
+            "all": "Alle Anlagen löschen"
+          }
+        }
+      }
+    },
+    "entities": {
+      "assets": "Anlagen"
+    },
+    "admin": {
+      "teamUse": {
+        "assets": "Anlagen"
+      }
+    }
+  }
+}
