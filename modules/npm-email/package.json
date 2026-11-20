@@ -20,8 +20,8 @@
     "@rbp/module-fleet": "*",
     "@rbp/module-offers": "*",
     "@rbp/module-messaging": "*",
-    "@tiptap/pm": "^3.32.0",
-    "@tiptap/react": "^3.32.0",
-    "@tiptap/starter-kit": "^3.32.0"
+    "@tiptap/pm": "^3.34.0",
+    "@tiptap/react": "^3.34.0",
+    "@tiptap/starter-kit": "^3.34.0"
   }
 }
