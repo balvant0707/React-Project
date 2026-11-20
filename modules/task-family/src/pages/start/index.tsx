@@ -17,7 +17,9 @@ const useTaskFamilyModules = () =>
   useQuery({
     queryKey: ["task-family-permission-modules"],
     staleTime: 5 * 60_000,
-    queryFn: async () => new Set(((await supabaseClient.from("permissions").select("module").eq("task_family", true)).data ?? []).map((r: { module: string }) => r.module)),
+    // Query data is persisted to IndexedDB, where Set instances restore as plain objects.
+    // Store a serializable array and convert it to a Set at the call site instead.
+    queryFn: async () => ((await supabaseClient.from("permissions").select("module").eq("task_family", true)).data ?? []).map((r: { module: string }) => r.module),
   });
 
 // The start page: the task types a user may start and an admin put on this page, with a search over name, short
@@ -31,7 +33,8 @@ export const StartPage = () => {
   const [startTypeId, setStartTypeId] = useState<string | null>(null);
   const [ticketQueueId, setTicketQueueId] = useState<string | null>(null);
   const { creatable: queues } = useTicketQueues();
-  const { data: taskFamilyModules = new Set<string>() } = useTaskFamilyModules();
+  const { data: taskFamilyModuleKeys = [] } = useTaskFamilyModules();
+  const taskFamilyModules = new Set(taskFamilyModuleKeys);
   // Platform: the ticket form comes from the tickets module (slot task-family.start.ticketForm).
   const TicketFormModal = useRecordSlot("task-family.start.ticketForm")[0]?.Component;
 
