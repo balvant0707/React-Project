@@ -1,5 +1,5 @@
 { "name": "@rbp/module-home", "version": "0.0.0", "private": true, "type": "module",
   "exports": { ".": "./src/module.tsx", "./src/*": "./src/*" },
   "dependencies": { "@ant-design/icons": "^5.6.1", "@rbp/core": "*", "@rbp/ui": "*", "@rbp/module-task-family": "*", "@rbp/module-tasks": "*",
-    "@rbp/module-messaging": "*", "@tabler/icons-react": "3.48.0", "@tanstack/react-query": "^5.100.0", "antd": "^5.29.3", "dayjs": "^1.11.13",
-    "react": "^19.2.8", "react-i18next": "^16.0.0", "react-router-dom": "^7.18.3" } }
+    "@rbp/module-messaging": "*", "@tabler/icons-react": "3.52.0", "@tanstack/react-query": "^5.108.2", "antd": "^5.29.3", "dayjs": "^1.11.13",
+    "react": "^19.2.8", "react-i18next": "^16.0.0", "react-router-dom": "^7.18.6" } }
